@@ -12,6 +12,7 @@ type Project = {
   summary: string;
   outcome: string;
   tags: string[];
+  icon: string;
   image?: string;
   gallery?: string[];
   link?: string;
@@ -32,6 +33,7 @@ const projects: Project[] = [
     outcome:
       "首版已上线，冷启动覆盖 3 家门店；拓展至 18 个品牌、60 余家自习室，并完成配套商家运营后台。",
     tags: ["0—1 产品", "AI 能力", "C 端 + B 端"],
+    icon: "/handdrawn-assets/icon-focus.png",
     visual: "shishi",
     accent: "#f05a45",
   },
@@ -47,6 +49,7 @@ const projects: Project[] = [
     outcome:
       "独立推进需求拆解、体验方案和 AI Coding 落地，并完成可访问的交互产品版本。",
     tags: ["AI 陪伴", "ADHD 辅助", "全栈落地"],
+    icon: "/handdrawn-assets/icon-tarot.png",
     image: "/legacy-images/mindanchor.jpg",
     gallery: ["/legacy-images/mindanchor.jpg"],
     link: "https://wcnp7sqisgpt.aiforce.cloud/app/app_4jpb099bjexa5/timeline",
@@ -64,6 +67,7 @@ const projects: Project[] = [
     outcome:
       "完成 V1.0 PRD 与可交互原型，定义角色权限、24 小时编辑锁定、KPI 看板与 V1—V3 演进路线。",
     tags: ["B 端 CRM", "信息架构", "复杂规则"],
+    icon: "/handdrawn-assets/icon-crm.png",
     image: "/legacy-images/cargoware.jpg",
     gallery: ["/legacy-images/cargoware.jpg"],
     accent: "#72c7bc",
@@ -79,6 +83,7 @@ const projects: Project[] = [
       "面向高层火灾受困者与消防员，设计视觉、语音和手势识别三类交互，帮助引导逃生与现场沟通。",
     outcome: "完成完整概念体验设计，获得 2022 年“智博杯”工业设计大赛优秀奖。",
     tags: ["用户研究", "多模态交互", "三维建模"],
+    icon: "/handdrawn-assets/icon-drone.png",
     image: "/legacy-images/DRAGONFL UAV.jpg",
     gallery: [
       "/legacy-images/DRAGONFL UAV.jpg",
@@ -101,6 +106,7 @@ const projects: Project[] = [
       "针对城市养蜂操作门槛高、状态不可见和取蜜繁琐的问题，设计人蜂分离、自助取蜜与智能监控的一体化体验。",
     outcome: "完成硬件、配套 App 与成果分享流程的全链路设计，并获得外观设计专利。",
     tags: ["IoT", "软硬一体", "外观专利"],
+    icon: "/handdrawn-assets/icon-beehive.png",
     image: "/legacy-images/BEE HIVE.jpg",
     gallery: [
       "/legacy-images/BEE HIVE.jpg",
@@ -122,6 +128,7 @@ const projects: Project[] = [
       "用“雪糕棍”手柄同时解决取放、方向识别与趣味性问题，让共享充电宝形成更鲜明的使用记忆。",
     outcome: "获得 European Product Design Award Winner。",
     tags: ["产品设计", "CMF", "人机细节"],
+    icon: "/handdrawn-assets/icon-powerbank.png",
     image: "/legacy-images/ICPB.jpg",
     gallery: [
       "/legacy-images/ICPB.jpg",
@@ -205,6 +212,7 @@ function TiltCard({ project, onOpen }: { project: Project; onOpen: () => void })
       aria-label={`打开 ${project.title} 项目详情`}
     >
       <div className="project-photo-frame">
+        <img className="project-doodle-icon" src={project.icon} alt="" aria-hidden="true" />
         <ProjectVisual project={project} compact />
         <span className="view-project">打开项目 ↗</span>
       </div>
@@ -268,8 +276,8 @@ export default function Home() {
   return (
     <main>
       <div className="cursor-orbit" ref={cursorRef} aria-hidden="true" />
-      <div className="edge-rail left" aria-hidden="true">{Array.from({ length: 18 }, (_, i) => <span key={i}>{i % 4 === 0 ? "舒" : i % 4 === 1 ? "✦" : i % 4 === 2 ? "⌁" : "设"}</span>)}</div>
-      <div className="edge-rail right" aria-hidden="true">{Array.from({ length: 18 }, (_, i) => <span key={i}>{i % 4 === 0 ? "惟" : i % 4 === 1 ? "◉" : i % 4 === 2 ? "✣" : "计"}</span>)}</div>
+      <img className="edge-rail left" src="/handdrawn-assets/side-rail-left.png" alt="" aria-hidden="true" />
+      <img className="edge-rail right" src="/handdrawn-assets/side-rail-right.png" alt="" aria-hidden="true" />
 
       <nav className="top-nav" aria-label="主导航">
         <a className="nav-mark" href="#top" aria-label="返回首页">惟</a>
@@ -294,15 +302,12 @@ export default function Home() {
             <a className="scribble-link" href="#work">看看我的作品 <span>↓</span></a>
           </div>
           <div className="book-page hero-illustration" aria-label="作品界面拼贴">
-            <div className="paper-grid" />
-            <div className="browser-sketch">
-              <div className="browser-bar"><i /><i /><i /><span>WEIJIA&apos;S WORKBENCH</span></div>
-              <div className="browser-canvas">
-                <div className="mini-card one">目标<br /><b>专注 42 min</b></div>
-                <div className="mini-card two"><b>AI 随心记</b><br />跑后自动整理</div>
-                <div className="mini-card three">CRM<br /><b>今日跟进 8</b></div>
-                <span className="tiny-person">◠</span>
-              </div>
+            <div className="hero-icon-cloud" aria-hidden="true">
+              <div className="hero-icon focus"><img src="/handdrawn-assets/icon-focus.png" alt="" /><span>专注产品</span></div>
+              <div className="hero-icon crm"><img src="/handdrawn-assets/icon-crm.png" alt="" /><span>复杂系统</span></div>
+              <div className="hero-icon drone"><img src="/handdrawn-assets/icon-drone.png" alt="" /><span>智能硬件</span></div>
+              <div className="hero-icon tools"><img src="/handdrawn-assets/icon-tools.png" alt="" /><span>设计与实现</span></div>
+              <img className="hero-bird" src="/handdrawn-assets/icon-bird.png" alt="" />
             </div>
             <div className="hero-caption">Research · Strategy · Interaction · Build</div>
           </div>
@@ -360,7 +365,7 @@ export default function Home() {
 
         <div className="archive-ticket">
           <div><span>DESIGN ARCHIVE</span><b>更多工业设计作品</b><p>城市蜂巢 · 秦溯文创茶具 · 产品造型与 CMF</p></div>
-          <a href="/projects/beehive.png" target="_blank" rel="noreferrer">打开档案 ↗</a>
+          <a href="/legacy-images/BEE HIVE.jpg" target="_blank" rel="noreferrer">打开档案 ↗</a>
           <i>2022</i>
         </div>
       </section>
@@ -409,6 +414,7 @@ export default function Home() {
             </div>
             <div className="modal-copy">
               <span className="eyebrow">{activeProject.eyebrow}</span>
+              <img className="modal-project-icon" src={activeProject.icon} alt="" aria-hidden="true" />
               <h2 id="project-modal-title">{activeProject.title}</h2>
               <p className="modal-role">我的角色 · {activeProject.role}</p>
               <div className="modal-section"><small>问题与方案</small><p>{activeProject.summary}</p></div>
