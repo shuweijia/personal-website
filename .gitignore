@@ -41,3 +41,8 @@ yarn-error.log*
 
 # local design references
 *.mov
+/tmp/
+/public/handdrawn-assets/generated/*
+!/public/handdrawn-assets/generated/hero-shuweijia-relaxed.png
+!/public/handdrawn-assets/generated/shuweijia-thinking-relaxed.png
+/public/handdrawn-assets/hero-product-scene.png

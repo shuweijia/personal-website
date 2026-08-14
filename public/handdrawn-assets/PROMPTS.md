@@ -13,3 +13,11 @@ Create a matched pair of tall, narrow decorative border rails for the far left a
 ## Container frame toolkit
 
 Create four separate empty decorative content frames in a 2 × 2 grid: a rounded open-book panel with a vermilion rim and cream grid paper, a torn notebook-paper rectangle with stitched corners and tape tabs, a slightly tilted polaroid project card, and a ticket-shaped information card with perforated edges. Use warm paper, imperfect hand-drawn red borders, subtle grid lines and screen-print texture. Keep all interiors blank and spacious. No text, icons or watermark. Generate on a flat green chroma-key background for later alpha removal.
+
+## Side-rail timer cleanup
+
+Edit the side-border overlay so the top-left persimmon timer keeps its hand-drawn shape and position but loses the solid vermilion rounded-square background. Reconstruct it as an open floating line-art pictogram, preserving the remaining rail artwork. Fill the removed area with the same flat green chroma-key background for later alpha removal.
+
+## Hero product scene
+
+Create one cohesive hand-drawn narrative scene for the right page of Shu Weijia's portfolio. Show a young Chinese product designer working inside a large browser window, with plants and friendly creatures weaving through the interface. Integrate a persimmon focus timer, CRM chart panel, rescue drone, urban beehive, pencil and ruler as story details rather than separate stickers. Use imperfect vermilion and charcoal pen lines with small warm-cream fills, generous padding, no readable text, and a flat green chroma-key background for later alpha removal.
