@@ -1,0 +1,17 @@
+# Local recordings and design references are not part of the deployed site.
+*.mov
+/tmp
+/dist
+/outputs
+/work
+/.next
+/.vinext
+/.wrangler
+
+# High-resolution working-source illustrations; the rendered variants are used by the site.
+/public/handdrawn-assets/generated/*-source.png
+/public/handdrawn-assets/hero-product-scene.png
+/public/handdrawn-assets/container-frames-sheet.png
+/public/handdrawn-assets/project-icons-sheet.png
+/public/handdrawn-assets/generated/frame-notebook-regular.png
+/public/handdrawn-assets/generated/*-sheet.png
