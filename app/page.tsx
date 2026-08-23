@@ -31,7 +31,8 @@ type Project = {
   image?: string;
   gallery?: string[];
   link?: string;
-  visual?: "shishi" | "crm" | "practice";
+  merchantLink?: string;
+  visual?: "shishi" | "merchant" | "crm" | "practice";
   accent: string;
 };
 
@@ -96,14 +97,32 @@ const projects: Project[] = [
     category: "产品",
     role: "产品负责人 / 全栈开发",
     summary:
-      "把目标规划、专注执行、学习记录、AI 陪伴、积分权益与线下自习室连接成完整学习闭环。",
+      "面向自习室用户与线下学习空间，搭建“目标设定—计划执行—专注记录—复盘调整”学习闭环，并以 AI 能力与积分权益连接 C 端体验和多门店运营。",
     outcome:
-      "首版已上线，冷启动覆盖 3 家门店；拓展至 18 个品牌、60 余家自习室，并完成配套商家运营后台。",
+      "V1 已于 2026.08.03 上线，在 3 家自习室冷启动；合作资源拓展至 18 个品牌、60 余家门店，并完成连接线上数据的商家运营网站。",
     tags: ["0—1 产品", "AI 能力", "C 端 + B 端"],
     icon: "/handdrawn-assets/icon-focus.png",
     link: "https://wxmpurl.cn/U5Yn4WuV7jh",
+    merchantLink: "https://merchant-admin-web-cloud1-7gb1r3mm0c292233.webapps.tcloudbase.com",
     visual: "shishi",
     accent: "#f05a45",
+  },
+  {
+    id: "merchant",
+    title: "柿柿专注 · 数据与经营平台",
+    eyebrow: "B 端数据产品 · 多门店经营",
+    year: "2026—至今",
+    category: "产品",
+    role: "产品负责人 / 全栈开发",
+    summary:
+      "面向平台、品牌与门店经营者，将小程序中的引流、专注、功能访问、积分、卡券与到店行为汇总为可解释的经营数据，并支持用户分层、行为回溯与活动方案设计。",
+    outcome:
+      "独立完成产品规划、指标与权限设计、交互界面、前后端开发、CloudBase 数据接入及线上部署；已支持规则画像、人群圈选和活动草稿，自动发券与营销转化验证尚未实现。",
+    tags: ["B 端数据产品", "用户画像", "精细化运营"],
+    icon: "/handdrawn-assets/icon-crm.png",
+    merchantLink: "https://merchant-admin-web-cloud1-7gb1r3mm0c292233.webapps.tcloudbase.com",
+    visual: "merchant",
+    accent: "#236447",
   },
   {
     id: "mindanchor",
@@ -113,7 +132,7 @@ const projects: Project[] = [
     category: "产品",
     role: "产品设计 / AI Coding",
     summary:
-      "面向 ADHD 人群的专注力管理工具，把任务拆解、专注反馈与 AI 陪伴放进一条更低负担的使用路径。",
+      "探索面向 ADHD 用户的任务拆解、专注反馈与 AI 陪伴体验。",
     outcome:
       "独立推进需求拆解、体验方案和 AI Coding 落地，并完成可访问的交互产品版本。",
     tags: ["AI 陪伴", "ADHD 辅助", "全栈落地"],
@@ -131,7 +150,7 @@ const projects: Project[] = [
     category: "体验",
     role: "原型产品设计师 / UX 设计师",
     summary:
-      "将分散在微信与 QQ 中的销售沟通，重构为客户筛选、跟进、追溯、统计和下一步行动的结构化闭环。",
+      "面向国际货代销售跟进场景，设计客户筛选、跟进记录、历史追溯与下一步行动的 CRM 原型。",
     outcome:
       "在 1 周内完成需求分析、V1.0 PRD 与可交互高保真原型，并规划 V1—V3 的产品演进路线。",
     tags: ["B 端 CRM", "信息架构", "复杂规则"],
@@ -151,8 +170,8 @@ const practices: Project[] = [
     category: "智能硬件",
     role: "用户研究与交互设计",
     summary:
-      "面向高层火灾受困者与消防员，设计视觉、语音和手势识别三类交互，帮助引导逃生与现场沟通。",
-    outcome: "完成完整概念体验设计，获得 2022 年“智博杯”工业设计大赛优秀奖。",
+      "面向高层火灾救援场景，探索无人机如何协助消防人员获取信息、引导受困者并建立沟通。",
+    outcome: "3 人团队完成概念体验方案；我负责前期调研、竞品分析、草图设计与部分三维建模。项目获 2022 年“智博杯”工业设计大赛优秀奖。",
     tags: ["用户研究", "多模态交互", "三维建模"],
     icon: "/handdrawn-assets/icon-drone.png",
     image: "/legacy-images/DRAGONFL UAV.jpg",
@@ -174,7 +193,7 @@ const practices: Project[] = [
     category: "智能硬件",
     role: "产品设计 / 建模 / 竞品分析",
     summary:
-      "针对城市养蜂操作门槛高、状态不可见和取蜜繁琐的问题，设计人蜂分离、自助取蜜与智能监控的一体化体验。",
+      "城市智能养蜂概念设计，探索人蜂分离、自助取蜜与状态监测的一体化体验。",
     outcome: "完成硬件、配套 App 与成果分享流程的全链路设计，并获得外观设计专利。",
     tags: ["IoT", "软硬一体", "外观专利"],
     icon: "/handdrawn-assets/icon-beehive.png",
@@ -196,7 +215,7 @@ const practices: Project[] = [
     category: "智能硬件",
     role: "建模 / 草图 / 竞品分析",
     summary:
-      "用“雪糕棍”手柄同时解决取放、方向识别与趣味性问题，让共享充电宝形成更鲜明的使用记忆。",
+      "围绕共享充电宝的取放与归还体验，进行产品造型与人机细节设计。",
     outcome: "获得 European Product Design Award Winner。",
     tags: ["产品设计", "CMF", "人机细节"],
     icon: "/handdrawn-assets/icon-powerbank.png",
@@ -216,20 +235,20 @@ const practices: Project[] = [
 const caseStudies: Record<string, CaseStudy> = {
   shishi: {
     label: "0 → 1 PRODUCT CASE STUDY · 2026",
-    title: "柿柿专注 · 把学习计划带回真实执行",
+    title: "柿柿专注：从目标到复盘的学习闭环",
     lead:
-      "面向自习室用户与线下学习空间，构建一套连接目标规划、专注执行、学习记录、AI 陪伴、积分权益与门店运营的产品体系。项目并不止于提供一个计时器，而是尝试让用户从“想学”稳定走到“今天真正完成了什么”，同时让线下自习室获得持续连接用户和理解经营数据的能力。",
+      "面向自习室用户与线下学习空间，柿柿专注将目标设定、计划执行、专注记录、复盘调整、积分权益和门店服务连接起来。作为核心成员，我负责产品整体架构，并独立推进 AI 塔罗、计划室及商家运营网站等模块的产品设计与开发落地；V1 已上线，项目正基于真实行为数据持续迭代。",
     hero: { src: "", alt: "柿柿专注微信小程序界面示意" },
     heroVisual: "project",
     stats: [
-      { label: "项目类型", value: "C 端小程序 + B 端后台" },
+      { label: "项目类型", value: "C 端小程序 + B 端运营网站" },
       { label: "我的角色", value: "产品负责人 / 全栈开发" },
       { label: "上线时间", value: "2026.08.03" },
-      { label: "首轮范围", value: "3 家自习室冷启动" },
+      { label: "首轮验证", value: "221 注册 / 88 核心行为" },
     ],
     sections: [
       {
-        title: "问题定义：学习工具与学习场景是断开的",
+        title: "为什么用户有计划，却难以持续执行",
         lead: "用户不是缺少单点工具，而是缺少一条从目标到执行、从线上到线下能够持续运转的路径。",
         points: [
           { title: "计划难以落地", body: "长期目标往往停留在“想考什么、想学什么”，缺少根据当前水平、可用时间和真实节奏拆解为当周、当天可执行任务的过程。" },
@@ -238,7 +257,7 @@ const caseStudies: Record<string, CaseStudy> = {
         ],
       },
       {
-        title: "产品策略：先验证核心闭环，再放大计划能力",
+        title: "先让核心链路跑起来，再迭代计划室",
         lead: "第一版优先让关键链路可用，用小范围真实使用验证偏好、稳定性与需求；第二版再以计划室为重点，把“专注”延展为更完整的学习管理。",
         body: [
           "我先梳理了首页、专注学习、线上自习室、计划室、AI / 塔罗陪伴、学习搭子、积分权益、线下学习空间、个人中心与商家后台的整体架构，让 C 端体验与 B 端运营从一开始就能相互连接。",
@@ -273,7 +292,7 @@ const caseStudies: Record<string, CaseStudy> = {
         ],
       },
       {
-        title: "B 端商家运营：把 C 端行为转化为经营动作",
+        title: "商家运营网站：从行为数据到活动方案",
         lead: "我独立规划、设计并开发配套运营网站，让平台、品牌方和门店管理者可以从“看数据”走到“找人群、定方案”。",
         points: [
           { title: "多角色经营工作台", body: "围绕不同角色的决策需求，规划经营看板、功能访问、用户画像、精准卡券和行为轨迹五个模块，连接引流、学习、权益与门店经营。" },
@@ -291,7 +310,7 @@ const caseStudies: Record<string, CaseStudy> = {
         ],
       },
       {
-        title: "我的端到端职责",
+        title: "我负责的产品与开发范围",
         body: [
           "作为产品负责人 / 全栈开发，我负责整体功能架构、模块划分、页面体系和视觉方向；其中 AI 塔罗与计划室由我独立完成场景分析、需求优先级、信息架构、PRD、流程与交互设计、UI/UX、页面开发、接口联调、AI 接入、积分规则、埋点、测试及迭代。",
           "同时，我独立完成商家运营网站的产品规划、功能设计、前后端开发与线上数据接入，并参与云函数、用户数据隔离、跨页面任务联动与异常状态等实现，保证产品方案能够直接变为可测试、可验证的版本。",
@@ -299,11 +318,25 @@ const caseStudies: Record<string, CaseStudy> = {
       },
     ],
   },
+  merchant: {
+    label: "B2B DATA PRODUCT · 2026",
+    title: "把小程序行为，变成门店下一步的经营依据。",
+    lead:
+      "线下自习室能看到到店和消费，却很难持续理解用户离店后的学习行为。我独立设计并开发数据与经营平台，将分散在小程序中的引流、专注、功能使用、积分、卡券与门店关系汇总为一条可回溯的证据链，帮助平台和门店从“看到数字”走向“识别人群、设计行动”。",
+    hero: { src: "/merchant-ui/platform-overview.png", alt: "柿柿专注数据与经营平台界面" },
+    stats: [
+      { label: "项目类型", value: "B 端数据产品" },
+      { label: "我的角色", value: "产品负责人 / 全栈开发" },
+      { label: "数据状态", value: "已接入线上数据" },
+      { label: "交付状态", value: "已部署可访问" },
+    ],
+    sections: [],
+  },
   crm: {
     label: "PRODUCT REQUIREMENTS DOCUMENT · V1.0",
-    title: "CRM 销售跟进管理系统体验重塑",
+    title: "CargoWare CRM：让销售跟进可追溯、可协同",
     lead:
-      "在国际货代销售过程中，沟通高度碎片化，销售人员往往依赖个人微信或 QQ 与客户沟通，导致企业内部缺乏有效的历史追溯机制和量化的 KPI 评估手段。",
+      "这是一个面向国际货代销售跟进场景的 B 端产品设计项目。我通过半结构化访谈、业务流程梳理和原型设计，将分散在微信、QQ 等渠道的沟通转化为“客户筛选—新增跟进—历史追溯—统计分析—下一步行动”的系统方案。",
     hero: { src: "/legacy-images/cargoware.jpg", alt: "CargoWare 国际货代 CRM 销售跟进模块界面" },
     stats: [
       { label: "项目类型", value: "B 端 CRM" },
@@ -313,12 +346,12 @@ const caseStudies: Record<string, CaseStudy> = {
     ],
     sections: [
       {
-        title: "核心目标",
-        lead: "通过结构化设计沉淀客户资产，以可视化数据驱动销售效能和管理决策。",
+        title: "设计目标",
+        lead: "通过结构化记录沉淀客户资产，并为销售过程管理提供可追溯的数据基础。",
         points: [
-          { title: "沉淀客户资产", body: "通过结构化录入，将沟通记录从个人社交软件转移并沉淀到企业系统中。" },
-          { title: "驱动销售效能", body: "提供直观的统计看板，量化当月工作量，激发销售动力。" },
-          { title: "辅助业务决策", body: "为管理层提供真实、可追溯的过程数据，作为绩效考核的可靠依据。" },
+          { title: "沉淀客户资产", body: "设计结构化录入方式，将沟通记录从个人社交软件沉淀到企业系统。" },
+          { title: "支持过程管理", body: "规划统计看板，用于呈现当月跟进量和过程投入。" },
+          { title: "辅助管理判断", body: "为管理层提供可追溯的过程数据，作为后续考核与复盘的参考。" },
         ],
       },
       {
@@ -336,19 +369,19 @@ const caseStudies: Record<string, CaseStudy> = {
         points: [
           { title: "01 · 导航与全局布局", body: "入口设在“销售—跟进记录”。采用左侧列表、右侧详情的布局，批量处理多个客户时无需频繁跳页。" },
           { title: "02 · 智能客户列表看板", body: "展示公司、对接人、跟进状态与主营业务，支持模糊搜索和标签筛选；默认按最后跟进时间倒序，优先暴露长期未维护客户。" },
-          { title: "03 · 强管控操作中心", body: "集成时间、方式、结果与内容表单。选择“上门拜访”时强制上传含 GPS 水印的现场照片，并将跟进结果关联客户生命周期。" },
+          { title: "03 · 跟进操作中心", body: "设计时间、方式、结果与内容表单；方案中要求上门拜访上传含 GPS 水印的现场照片，并将跟进结果关联客户生命周期。" },
         ],
       },
       {
-        title: "深度思考与体验优化",
-        lead: "让产品不仅是记录工具，也成为驱动业务增长的引擎。",
+        title: "规划中的规则与优化方向",
+        lead: "以下规则用于补齐客户经营闭环，尚属于产品方案与版本规划范围。",
         points: [
-          { title: "公海池自动流转", body: "无效沟通且超过 30 天未维护时，自动触发移入公海池，释放并盘活客户资源。" },
-          { title: "强制下一步计划", body: "保存记录时填写下次跟进时间，并自动写入系统日程，减少漏单与遗忘。" },
-          { title: "智能 SOP 触发", body: "录入“明确需求”后自动推送询价模板或待办，缩短转化路径。" },
-          { title: "移动端与语音识别", body: "覆盖户外销售场景，并支持语音转文字快捷录入，降低填写门槛。" },
-          { title: "防作弊补录时限", body: "仅允许补录过去 3 天内的记录，超期需主管审批解锁，避免月末突击补录。" },
-          { title: "生命周期自动映射", body: "正式签约后自动变更为合作中；连续 3 次无效沟通则提示放弃。" },
+          { title: "公海池回收规则", body: "规划无效沟通且超过 30 天未维护时进入公海池，以释放并盘活客户资源。" },
+          { title: "下一步跟进计划", body: "设计保存记录时填写下次跟进时间，并同步进入系统日程的流程，减少漏单与遗忘。" },
+          { title: "SOP 触发设想", body: "规划在录入“明确需求”后推送询价模板或待办，缩短后续处理路径。" },
+          { title: "移动端与语音录入", body: "为户外销售场景预留移动端与语音转文字快捷录入方向。" },
+          { title: "补录时限", body: "设计仅允许补录过去 3 天记录、超期由主管审批解锁的规则，减少月末突击补录。" },
+          { title: "生命周期映射", body: "定义正式签约后变更为合作中、连续 3 次无效沟通后提示放弃的状态规则。" },
         ],
       },
       {
@@ -360,13 +393,13 @@ const caseStudies: Record<string, CaseStudy> = {
         ],
       },
       {
-        title: "落地规则与业务联动",
+        title: "V1.0 的规则定义与联动设想",
         points: [
-          { title: "记录锁定", body: "创建后仅保留 24 小时编辑窗口，过期锁定，保证考核严肃性。" },
-          { title: "补录限制", body: "历史日期仅可回溯至过去 3 个自然日。" },
-          { title: "真实性校验", body: "上门拜访需调用移动端相册或相机，并校验图片 EXIF GPS 坐标。" },
-          { title: "基础资料联动", body: "客户签约状态变更后，反向同步至全局客户主档。" },
-          { title: "销售报表联动", body: "跟进明细实时进入 BI 看板，生成销售员月度勤奋度分析。" },
+          { title: "记录锁定", body: "定义创建后保留 24 小时编辑窗口、过期锁定的规则，以保护过程数据口径。" },
+          { title: "补录限制", body: "定义历史日期仅可回溯至过去 3 个自然日。" },
+          { title: "真实性校验", body: "规划上门拜访调用移动端相册或相机，并校验图片 EXIF GPS 坐标。" },
+          { title: "基础资料联动", body: "规划客户签约状态变更后同步至全局客户主档。" },
+          { title: "销售报表联动", body: "规划将跟进明细接入 BI 看板，用于生成销售员月度过程分析。" },
         ],
       },
     ],
@@ -375,7 +408,7 @@ const caseStudies: Record<string, CaseStudy> = {
     label: "PRODUCT DESIGN PORTFOLIO · 2022",
     title: "蜓火 · 高楼消防无人机",
     lead:
-      "面向高楼火灾中信息感知不足、受困者恐慌迷失和传统沟通低效等问题，建立被困人员、无人机与消防员之间的全新人机关系。",
+      "一个为期 6 周的高楼消防辅助救援概念设计项目。团队从火灾信息延迟、受困者引导和现场沟通切入，提出视觉、语音与动作识别的多模态交互方案；我主要负责调研、竞品分析、草图与部分建模。",
     hero: { src: "/legacy-images/DRAGONFL UAV.jpg", alt: "蜓火无人机主渲染图" },
     stats: [
       { label: "成果", value: "智博杯优秀奖" },
@@ -398,12 +431,12 @@ const caseStudies: Record<string, CaseStudy> = {
         images: [{ src: "/legacy-images/dragonfly-user-map.png", alt: "高楼火灾数据调研图表" }],
       },
       {
-        title: "功能与多模态交互创新",
-        lead: "用灯光、手势和语音建立更直观、更有安全感的逃生引导。",
+        title: "概念方案中的多模态交互",
+        lead: "探索用灯光、手势和语音建立更直观、更有安全感的逃生引导。",
         points: [
-          { title: "01 · 信号灯智能引导", body: "检测温度与烟气浓度：绿色常亮表示前进，黄色慢闪表示等待，红色快闪警告危险。" },
-          { title: "02 · 智能手势识别", body: "识别受困者姿态和意愿，按身体状况动态调整逃生路线。" },
-          { title: "03 · 语音与情绪安抚", body: "通过语音引导稳定情绪；识别“难受”“不能”等关键词后切换路线或联通救援人员。" },
+          { title: "01 · 信号灯引导", body: "设想依据温度与烟气浓度传达状态：绿色常亮表示前进，黄色慢闪表示等待，红色快闪警告危险。" },
+          { title: "02 · 手势识别", body: "探索识别受困者姿态和意愿，并据此辅助调整逃生路线。" },
+          { title: "03 · 语音与情绪安抚", body: "设想通过语音引导稳定情绪；识别“难受”“不能”等关键词后辅助调整救治或路线方案。" },
           { title: "04 · 空陆状态转换", body: "借助尾部叶轮与折叠结构，在室外高空、室内和狭窄通道中切换移动方式。" },
         ],
         images: [
@@ -425,14 +458,14 @@ const caseStudies: Record<string, CaseStudy> = {
         ],
       },
       {
-        title: "硬件结构与技术架构",
-        lead: "以模块化设计和多维传感器集群，构建高空消防的全场景掌控力。",
+        title: "概念方案中的硬件与技术设想",
+        lead: "以模块化结构和传感器组合，探索高楼消防场景下的信息获取与救援辅助方式。",
         points: [
-          { title: "火灾探测技术", body: "实时分析火情，以红外探测内部结构和火源隐患。" },
-          { title: "自动避障技术", body: "雷达与视觉协同，规避坠落物和复杂结构。" },
-          { title: "室内外定位", body: "在高楼内部 GPS 信号弱的情况下仍保持三维定位与跟踪。" },
-          { title: "集群控制", body: "多机共享资源、协同通信并智能分配任务。" },
-          { title: "远程监控与测绘", body: "摄像机与红外扫描进行三维建模，实现全流程远程监控和余烬监管。" },
+          { title: "火灾探测", body: "设想以红外感知辅助识别火情、内部结构与火源隐患。" },
+          { title: "避障", body: "探索雷达与视觉协同，用于规避坠落物和复杂结构。" },
+          { title: "室内外定位", body: "探索在高楼内部 GPS 信号较弱时维持定位与跟踪的可行方式。" },
+          { title: "多机协同", body: "提出多机共享信息、协同通信和任务分配的概念。" },
+          { title: "远程监控与测绘", body: "设想通过摄像机与红外扫描获取现场信息，辅助救援判断。" },
         ],
         images: [{ src: "/legacy-images/dragonfly-exploded.png", alt: "蜓火无人机爆炸结构图" }],
       },
@@ -572,12 +605,32 @@ function ProjectVisual({ project, compact = false }: { project: Project; compact
 
   if (project.visual === "shishi") {
     return (
-      <div className="project-image visual-shishi" aria-label="柿柿专注产品界面示意">
-        <div className="phone-shell">
-          <div className="phone-top"><i /> 柿柿专注 <b>···</b></div>
-          <div className="focus-ring"><span>42</span><small>今日专注 / 分钟</small></div>
-          <div className="today-task"><span>今日计划</span><strong>完成作品集首页</strong></div>
-          <div className="mini-nav"><b>◉</b><b>⌁</b><b>✦</b><b>◎</b></div>
+      <div className="project-image visual-shishi" role="img" aria-label="柿柿专注首页、计划室与 AI 服务真实界面组合">
+        <span className="shishi-card-kicker">FOCUS · PLAN · SPACE</span>
+        <div className="shishi-card-copy">
+          <strong>柿柿专注</strong>
+          <span>把“想学”<br />带回今天。</span>
+        </div>
+        <div className="shishi-card-screens" aria-hidden="true">
+          <figure className="shishi-card-screen shishi-card-screen-home"><img src="/shishi-ui/IMG_9718.PNG" alt="" /></figure>
+          <figure className="shishi-card-screen shishi-card-screen-plan"><img src="/shishi-ui/IMG_9738.PNG" alt="" /></figure>
+          <figure className="shishi-card-screen shishi-card-screen-ai"><img src="/shishi-ui/IMG_9725.PNG" alt="" /></figure>
+        </div>
+        <span className="shishi-card-stamp">小程序 × AI × 自习室</span>
+      </div>
+    );
+  }
+
+  if (project.visual === "merchant") {
+    return (
+      <div className="project-image visual-merchant" aria-label="柿柿专注数据与经营平台界面示意">
+        <span className="merchant-card-note">DATA → AUDIENCE → ACTION</span>
+        <div className="merchant-card-window">
+          <div className="merchant-window-bar"><i /><i /><i /></div>
+          <div className="merchant-card-shot"><img src="/merchant-ui/platform-overview.png" alt="柿柿专注平台数据总览" /></div>
+        </div>
+        <div className="merchant-card-float">
+          <b>精准卡券</b><strong>动态</strong><span>实时匹配人数</span><i /><i /><i />
         </div>
       </div>
     );
@@ -827,6 +880,292 @@ function CargoCaseStudySections({ study }: { study: CaseStudy }) {
   );
 }
 
+function ShishiCaseCover() {
+  return (
+    <div className="shishi-cover-art" aria-label="柿柿专注小程序核心界面组合封面">
+      <div className="shishi-cover-copy"><span>FOCUS · PLAN · SPACE</span><strong>把“想学”<br />带回今天。</strong><small>小程序 × AI × 线下自习室</small></div>
+      <div className="shishi-cover-phones" aria-hidden="true">
+        <img src="/shishi-ui/IMG_9738.PNG" alt="" />
+        <img src="/shishi-ui/IMG_9718.PNG" alt="" />
+        <img src="/shishi-ui/IMG_9725.PNG" alt="" />
+      </div>
+      <i className="shishi-cover-sun" /><i className="shishi-cover-grid" />
+    </div>
+  );
+}
+
+function ShishiPhone({ src, alt, className = "" }: { src: string; alt: string; className?: string }) {
+  return <figure className={`shishi-phone ${className}`}><img src={src} alt={alt} loading="lazy" /></figure>;
+}
+
+function ShishiSectionHeading({ number, eyebrow, title, lead }: { number: string; eyebrow: string; title: string; lead?: string }) {
+  return <div className="shishi-section-heading"><span>{number}</span><div><small>{eyebrow}</small><h3>{title}</h3>{lead && <p>{lead}</p>}</div></div>;
+}
+
+function ShishiCaseStudySections({ onOpenMerchant }: { onOpenMerchant: () => void }) {
+  return (
+    <div className="shishi-case-sections">
+      <section className="shishi-origin">
+        <ShishiSectionHeading number="01" eyebrow="ORIGIN / 项目来源" title="从一次到店自习，延长为一段持续的学习关系" />
+        <div className="shishi-origin-layout">
+          <blockquote>用户并不缺一个计时器。<br />真正缺少的是：离开自习室以后，仍然知道下一步该做什么。</blockquote>
+          <div><p>项目源于线下自习室的真实经营场景：门店能够承接一次到店学习，却很难继续参与用户之后的计划、执行与复盘；用户手里的目标、计时、资料和记录也分散在不同工具中。</p><p>因此，我们没有把柿柿专注定义成单点效率工具，而是从“目标如何落到今天”出发，连接计划、专注、学习记录、线上自习、线下门店与积分权益，同时为经营者补上理解用户行为的 B 端工具。</p></div>
+        </div>
+        <div className="shishi-context-strip"><div><b>2026.05</b><span>项目启动</span></div><div><b>C 端 + B 端</b><span>小程序与商家运营网站</span></div><div><b>2026.08.03</b><span>V1 上线并开始冷启动</span></div></div>
+      </section>
+
+      <section className="shishi-loop-section">
+        <ShishiSectionHeading number="02" eyebrow="PRODUCT STRATEGY / 产品策略" title="不是堆功能，而是让每一步自然走向下一步" lead="我先定义一条最小可验证闭环，再让 AI、空间与权益围绕这条主链路生长。" />
+        <div className="shishi-loop" aria-label="柿柿专注学习闭环">
+          {[["01","定目标","知道为什么学"],["02","拆到今天","明确现在做什么"],["03","进入专注","减少启动阻力"],["04","留下记录","只记录真实发生"],["05","复盘调整","让计划适应现实"]].map(([n,title,note]) => <article key={n}><b>{n}</b><strong>{title}</strong><span>{note}</span></article>)}
+        </div>
+        <div className="shishi-version-note"><b>版本取舍</b><p>V1 先验证专注、AI 服务、权益与空间入口是否被真实使用；计划室作为 V2 重点模块推进，避免在缺少行为证据时一次性做成庞大系统。</p></div>
+      </section>
+
+      <section className="shishi-feature shishi-feature-home">
+        <ShishiSectionHeading number="03" eyebrow="CORE EXPERIENCE / 首页与专注" title="打开首页，就能回答“我现在该做什么”" />
+        <div className="shishi-split-feature">
+          <div className="shishi-copy-stack"><article><small>WHY / 为什么做</small><h4>学习的第一道阻力，往往是重新进入状态。</h4><p>如果首页只是功能入口集合，用户仍要自己判断从哪里开始。我们需要先呈现今天的状态，再给出最短行动路径。</p></article><article><small>WHAT / 做成什么</small><h4>把今日学习、快捷专注与累计反馈放在同一视线。</h4><p>首页聚合公共自习室、签到、番茄钟和学习数据；用户既可以快速开始一次专注，也能看到持续学习留下的结果。</p></article></div>
+          <div className="shishi-phone-scene home-scene"><ShishiPhone src="/shishi-ui/IMG_9718.PNG" alt="柿柿专注首页，展示公共自习室、番茄钟与学习数据" /></div>
+        </div>
+        <div className="shishi-wide-story"><ShishiPhone src="/shishi-ui/IMG_9742.PNG" alt="柿柿专注线上自习室空间选择界面" /><ShishiPhone src="/shishi-ui/IMG_9743.PNG" alt="柿柿专注亮区公共自习室实时选座界面" /><div><small>ONLINE STUDY ROOM / 线上自习室</small><h4>专注不只是一个人的倒计时。</h4><p>用户可按明暗、交流氛围选择线上空间，再进入公共教室选座。空间状态、实时人数和座位占用让“有人一起学”变得可感知，同时保留安静区不发弹幕的边界。</p></div></div>
+      </section>
+
+      <section className="shishi-feature shishi-tarot-section">
+        <ShishiSectionHeading number="04" eyebrow="AI SERVICE / AI 塔罗" title="不把 AI 塞进聊天框，而是设计一段完整服务" lead="这是我独立负责产品设计、开发联调与 AI 接入的核心模块。" />
+        <div className="shishi-feature-rationale"><article><b>为什么需要</b><p>用户需要的不是一次随机答案，而是一段能够承接问题、建立期待、解释结果并继续追问的体验。</p></article><article><b>产品判断</b><p>用牌阵和抽牌建立明确流程，用上下文连续对话保留服务深度，再用积分、登录与异常规则控制真实使用边界。</p></article></div>
+        <div className="shishi-tarot-flow">
+          {[["/shishi-ui/IMG_9719.PNG","01","提出问题","先帮助用户说清此刻真正关心的事。"],["/shishi-ui/IMG_9720.PNG","02","选择牌阵","单张快速指引或过去／现在／未来三张牌。"],["/shishi-ui/IMG_9725.PNG","03","结构化解读","结合正逆位与牌面关系输出可阅读的解释。"],["/shishi-ui/IMG_9728.PNG","04","继续追问","保留同一次抽牌上下文，让问题可以被继续展开。"]].map(([src,n,title,note]) => <article key={n}><ShishiPhone src={src} alt={`柿柿专注 AI 塔罗${title}界面`} /><div><b>{n}</b><h4>{title}</h4><p>{note}</p></div></article>)}
+        </div>
+        <div className="shishi-rule-line"><span>78 张完整牌组</span><span>正／逆位</span><span>连续上下文</span><span>小柿饼扣减</span><span>服务端价格校验</span><span>异常兜底</span></div>
+      </section>
+
+      <section className="shishi-feature shishi-plan-section">
+        <ShishiSectionHeading number="05" eyebrow="AI PLANNING / 计划室" title="计划不是生成完就结束，而要经得起每天的变化" lead="计划室正在作为第二版重点模块推进；以下界面展示的是已完成的产品与交互方案，不将其表述为首版上线结果。" />
+        <div className="shishi-plan-hero"><div><small>WHY / 为什么做</small><h4>长期目标太远，普通待办又看不到全局。</h4><p>用户需要一条介于“我要上岸”和“今天背 20 个词”之间的可调整路径；AI 可以计算，但不能替用户决定。</p><blockquote>长期阶段定方向，周计划由用户确认，今日任务才进入执行。</blockquote></div><ShishiPhone src="/shishi-ui/IMG_9738.PNG" alt="柿柿专注计划室总览界面" /></div>
+        <div className="shishi-plan-steps"><article><ShishiPhone src="/shishi-ui/IMG_9739.PNG" alt="AI 生成学习路线后的计划确认界面" /><div><b>01</b><h4>先确认路线</h4><p>结合目标日期、当前水平、资料与可用时间生成阶段计划；用户确认后再继续，不让 AI 直接覆盖现实安排。</p></div></article><article><ShishiPhone src="/shishi-ui/IMG_9740.PNG" alt="计划室每日任务清单界面" /><div><b>02</b><h4>再落到今天</h4><p>把阶段目标拆成按学科、用时和完成标准组织的今日任务，并提供“按计划来／今天有点赶”的节奏选择。</p></div></article><article><ShishiPhone src="/shishi-ui/IMG_9741.PNG" alt="真实学习完成数据与记录界面" /><div><b>03</b><h4>只记录真实发生</h4><p>日、周、月、年维度保留实际完成与真实专注时长，后续计划调整也不会覆盖已经发生的学习。</p></div></article></div>
+        <div className="shishi-plan-flow">目标与资料 <i>→</i> AI 阶段计划 <i>→</i> 用户确认周计划 <i>→</i> 今日任务 <i>→</i> 专注记录 <i>→</i> 复盘调整</div>
+      </section>
+
+      <section className="shishi-feature shishi-space-section">
+        <ShishiSectionHeading number="06" eyebrow="ONLINE × OFFLINE / 空间与权益" title="让线上学习留下的积累，能在线下继续发生" />
+        <div className="shishi-space-grid"><article><ShishiPhone src="/shishi-ui/IMG_9736.PNG" alt="柿柿专注线下学习空间列表界面" /><div><small>找到空间</small><h4>从城市到门店</h4><p>按省市筛选门店，查看地址、营业时间、距离与特色，再进入预约或导航。</p></div></article><article><ShishiPhone src="/shishi-ui/IMG_9733.PNG" alt="柿柿专注积分与会员权益中心界面" /><div><small>积累权益</small><h4>把学习行为变成可感知资产</h4><p>小柿饼、会员、排行榜和门店权益集中呈现，让专注后的反馈不止是一串分钟数。</p></div></article></div>
+      </section>
+
+      <section className="shishi-feature shishi-merchant-section">
+        <ShishiSectionHeading number="07" eyebrow="B-SIDE EXTENSION / B 端延伸" title="为了让门店理解这些行为，我又做了一套独立的经营平台" />
+        <div className="shishi-merchant-bridge">
+          <div><small>INDEPENDENT CASE STUDY</small><h4>柿柿专注 · 数据与经营平台</h4><p>把小程序中的引流、专注、功能访问、积分、卡券与到店行为，转化成可下钻的经营数据、规则画像和人群圈选工具。</p><button onClick={onOpenMerchant}>查看独立 B 端项目 <span>→</span></button></div>
+          <div className="shishi-merchant-bridge-screen"><img src="/merchant-ui/platform-overview.png" alt="柿柿专注数据与经营平台总览" loading="lazy" /></div>
+        </div>
+      </section>
+
+      <section className="shishi-results-section">
+        <ShishiSectionHeading number="08" eyebrow="VALIDATION & ROLE / 验证与职责" title="先用真实行为判断产品，再决定下一版做什么" />
+        <div className="shishi-results-grid"><article><strong>221</strong><span>累计注册用户</span></article><article><strong>88</strong><span>完成首次核心行为</span></article><article><strong>40%</strong><span>注册至首次核心行为</span></article><article><strong>3 家</strong><span>自习室冷启动</span></article></div>
+        <p className="shishi-data-note">数据快照截至 2026.08.17。合作资源覆盖 18 个自习室品牌、60 余家门店；这里将“商业资源”与“已激活用户”严格分开表达。</p>
+        <div className="shishi-role-panel"><div><small>MY ROLE / 我的职责</small><h4>产品负责人 × 全栈开发</h4></div><p>负责整体架构、版本策略、页面体系与视觉方向；独立推进 AI 塔罗和计划室的场景分析、需求优先级、信息架构、PRD、交互与 UI、页面开发、接口联调、AI 接入、积分规则、埋点、测试和迭代。B 端经营平台作为独立项目另页展开。</p></div>
+      </section>
+    </div>
+  );
+}
+
+function MerchantSectionHeading({ number, eyebrow, title, lead }: { number: string; eyebrow: string; title: string; lead?: string }) {
+  return <div className="merchant-section-heading"><span>{number}</span><div><small>{eyebrow}</small><h3>{title}</h3>{lead && <p>{lead}</p>}</div></div>;
+}
+
+function MerchantBrowserShot({ src, alt, className = "" }: { src: string; alt: string; className?: string }) {
+  return (
+    <figure className={`merchant-browser-shot ${className}`}>
+      <div className="merchant-browser-bar"><i /><i /><i /><span>柿柿专注 · 数据与经营平台</span></div>
+      <div className="merchant-shot-viewport"><img src={src} alt={alt} loading="lazy" /></div>
+    </figure>
+  );
+}
+
+function MerchantDashboardPreview() {
+  const summary = [
+    ["引流结构", "用户从哪里来", "门店入口 · 用户分享"],
+    ["学习表现", "用户是否真实学习", "专注时长 · 活跃周期"],
+    ["经营机会", "谁值得继续服务", "权益状态 · 长期客线索"],
+  ];
+  const signals = [
+    ["关联用户", "去重用户口径"],
+    ["专注趋势", "按日观察变化"],
+    ["门店贡献", "授权范围对比"],
+  ];
+
+  return (
+    <div className="merchant-ui-schematic merchant-dashboard-preview" role="img" aria-label="门店经营看板结构示意，仅展示授权门店范围内的引流、学习表现、经营机会与权益回流信息，不含真实业务数字">
+      <header className="merchant-dashboard-toolbar">
+        <div><small>MERCHANT VIEW · 示意</small><b>门店经营看板</b></div>
+        <span>按授权门店</span>
+      </header>
+      <div className="merchant-dashboard-canvas">
+        <div className="merchant-dashboard-summary">
+          {summary.map(([label, question, scope]) => <article key={label}><small>{label}</small><b>{question}</b><span>{scope}</span></article>)}
+        </div>
+        <div className="merchant-dashboard-analysis">
+          <article className="merchant-dashboard-signals">
+            <header><b>趋势与口径</b><span>结构示意 · 非真实数值</span></header>
+            <div>{signals.map(([label, note]) => <p key={label}><span>{label}</span><b>{note}</b></p>)}</div>
+          </article>
+          <article className="merchant-dashboard-return">
+            <header><b>权益回流</b><span>链路拆分</span></header>
+            <div><span>领取</span><em>→</em><span>使用</span><em>→</em><span>核销</span></div>
+            <p>分开查看线上领取与线下核销状态</p>
+            <footer><b>下一步</b><span>进入人群圈选与活动设计</span></footer>
+          </article>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function MerchantCampaignPreview() {
+  const filters = [
+    ["活动门店", "从授权门店中选择"],
+    ["生命周期", "选择用户阶段"],
+    ["用户价值", "选择价值等级"],
+  ];
+  const draftFields = [
+    ["活动名称", "待填写"],
+    ["卡券权益", "待选择"],
+    ["活动目标", "待填写"],
+  ];
+
+  return (
+    <div className="merchant-ui-schematic merchant-campaign-preview" role="img" aria-label="已脱敏的精准卡券人群圈选与活动草稿界面示意">
+      <header className="merchant-preview-toolbar">
+        <div><small>SMART AUDIENCE</small><b>精准卡券 · 活动草稿</b></div>
+        <span>草稿模式 · 不会触达用户</span>
+      </header>
+      <div className="merchant-campaign-workspace">
+        <aside>
+          <div className="merchant-preview-panel-title"><span>01</span><b>圈选目标人群</b><small>AND 组合筛选</small></div>
+          <div className="merchant-filter-grid">
+            {filters.map(([label, value]) => <div className="merchant-preview-field" key={label}>{label}<span>{value}</span></div>)}
+          </div>
+          <div className="merchant-segment-tags">{["活跃用户", "深度专注", "下午学习", "已关注门店", "计划室偏好"].map(tag => <i key={tag}>{tag}</i>)}</div>
+          <div className="merchant-match-state"><b>匹配结果</b><span>随筛选条件实时更新</span></div>
+        </aside>
+        <main>
+          <div className="merchant-preview-panel-title"><span>02</span><b>设计卡券权益</b><small>保存为活动草稿</small></div>
+          <div className="merchant-draft-grid">
+            {draftFields.map(([label, value]) => <div className="merchant-preview-field" key={label}>{label}<span>{value}</span></div>)}
+          </div>
+          <div className="merchant-preview-actions"><small>仅保存草稿，不会直接发券或发送通知</small><span>保存活动草稿</span></div>
+        </main>
+      </div>
+    </div>
+  );
+}
+
+function MerchantCaseCover() {
+  return (
+    <div className="merchant-case-cover-art" aria-label="柿柿专注数据与经营平台核心界面组合封面">
+      <span className="merchant-cover-note">DATA → AUDIENCE → ACTION</span>
+      <MerchantBrowserShot src="/merchant-ui/platform-overview.png" alt="平台数据总览" className="merchant-cover-main" />
+      <div className="merchant-cover-card merchant-cover-kpi"><small>核心路径</small><strong>行为 → 人群</strong><span>已接入线上数据</span></div>
+      <div className="merchant-cover-card merchant-cover-action"><small>活动方案</small><strong>动态</strong><span>实时匹配人数</span></div>
+    </div>
+  );
+}
+
+function MerchantCaseStudySections() {
+  const loop = ["行为采集", "统一指标", "规则画像", "人群圈选", "活动草稿", "后续验证"];
+  return (
+    <div className="merchant-case-sections">
+      <section className="merchant-origin-section">
+        <MerchantSectionHeading number="01" eyebrow="ORIGIN / 项目起点" title="为什么要单独做一套 B 端产品" />
+        <div className="merchant-origin-grid">
+          <blockquote>门店看得到一次到店，<br />却看不清用户离店后发生了什么。</blockquote>
+          <div className="merchant-problem-list">
+            <article><b>01</b><div><h4>用户从哪里来？</h4><p>直接扫码、用户分享和不同品牌门店的引流关系散落在多套记录里。</p></div></article>
+            <article><b>02</b><div><h4>用户为什么留下？</h4><p>专注、计划、塔罗、积分和卡券分别发生，门店很难判断真实使用偏好。</p></div></article>
+            <article><b>03</b><div><h4>下一步该做什么？</h4><p>只有汇总数字，仍无法回答应该服务哪类用户、设计什么活动。</p></div></article>
+          </div>
+        </div>
+        <div className="merchant-role-triangle"><article><b>平台</b><span>看整体增长与经营健康</span></article><i>→</i><article><b>品牌</b><span>比较门店与引流结构</span></article><i>→</i><article><b>门店</b><span>识别人群并设计行动</span></article></div>
+      </section>
+
+      <section className="merchant-loop-section">
+        <MerchantSectionHeading number="02" eyebrow="PRODUCT LOOP / 产品闭环" title="先让数据成为证据，再让证据进入行动" lead="产品不是停在看板展示，而是从行为采集一路走到人群与活动方案；尚未完成的转化回看被明确放在下一阶段。" />
+        <div className="merchant-action-loop">{loop.map((item, index) => <article className={index === loop.length - 1 ? "is-next" : ""} key={item}><b>{String(index + 1).padStart(2,"0")}</b><strong>{item}</strong>{index < loop.length - 1 && <span>→</span>}</article>)}</div>
+        <p className="merchant-loop-boundary"><b>NEXT</b> 自动发券、用户通知、活动归因与营销转化验证尚未实现。</p>
+      </section>
+
+      <section className="merchant-overview-section">
+        <MerchantSectionHeading number="03" eyebrow="PLATFORM VIEW / 平台总览" title="先看全局，再下钻到门店与用户" lead="平台需要同时判断今天发生了什么、增长是否健康，以及不同门店贡献了什么。" />
+        <MerchantBrowserShot src="/merchant-ui/platform-overview.png" alt="平台增长与经营总览，包含实时指标和趋势" className="merchant-overview-shot" />
+        <p className="merchant-snapshot-note">界面数据为 2026.08.23 的实时快照，仅用于说明产品结构，不作为稳定业务成果。</p>
+        <div className="merchant-overview-notes">
+          <article><small>实时与今日</small><h4>判断当下是否正常</h4><p>在线、活跃、启动、新增等指标帮助平台快速发现当天变化。</p></article>
+          <article><small>趋势与漏斗</small><h4>判断增长是否健康</h4><p>近 30 天趋势和首次核心行为漏斗，避免只关注累计注册。</p></article>
+          <article><small>品牌与门店</small><h4>判断流量来自哪里</h4><p>按品牌和门店下钻，并区分门店直接流量与用户裂变流量。</p></article>
+        </div>
+      </section>
+
+      <section className="merchant-dashboard-section">
+        <MerchantSectionHeading number="04" eyebrow="MERCHANT VIEW / 经营看板" title="把指标翻译成门店真正要回答的问题" />
+        <div className="merchant-dashboard-story">
+          <div className="merchant-question-map">
+            {[['引流用户','门店带来了多少线上用户？','调整入口与推广方式'],['专注时长','用户有没有真正学习？','设计深度学习权益'],['卡券领取／核销','线上权益是否回到线下？','优化权益与核销链路'],['潜在长期客','谁值得持续经营？','进入人群圈选']].map(([metric,question,action]) => <article key={metric}><small>{metric}</small><h4>{question}</h4><p>下一步：{action}</p></article>)}
+          </div>
+          <MerchantDashboardPreview />
+        </div>
+      </section>
+
+      <section className="merchant-metric-section">
+        <MerchantSectionHeading number="05" eyebrow="METRIC PROOF / 功能访问" title="在比较功能偏好之前，先把使用口径算对" />
+        <div className="merchant-metric-proof">
+          <MerchantBrowserShot src="/merchant-ui/feature-analytics.png" alt="关联用户功能访问与周期分析" />
+          <div><article><b>01</b><h4>7／30／90 天切换</h4><p>用同一套周期比较功能表现和前后变化。</p></article><article><b>02</b><h4>用户 × 功能 × 日期去重</h4><p>同一用户同一天反复进入只计算一次，避免 PV 虚高。</p></article><article><b>03</b><h4>人数、活跃人天与人均天次</h4><p>把覆盖广度和使用频率拆开理解；活跃人天不等于访问次数。</p></article></div>
+        </div>
+      </section>
+
+      <section className="merchant-profile-section">
+        <MerchantSectionHeading number="06" eyebrow="RULE-BASED PROFILE / 用户画像" title="每一个标签，都应该能解释它从哪里来" lead="画像不是 AI 给出的模糊结论，而是根据学习、门店和权益行为形成的规则判断。" />
+        <div className="merchant-profile-formula"><span>专注记录</span><i>+</i><span>功能访问</span><i>+</i><span>门店行为</span><i>+</i><span>权益行为</span><b>=</b><strong>可解释用户画像</strong></div>
+        <div className="merchant-profile-lab">
+          <div className="merchant-anon-table"><header><b>匿名用户</b><span>生命周期</span><span>价值</span><span>画像证据</span></header>{[['用户 A','活跃','中价值','深度专注 · 已领取卡券'],['用户 B','沉默','低价值','下午学习 · 访问过门店'],['用户 C','活跃','高价值','计划室偏好 · 高频到店'],['用户 D','新用户','待判断','数据积累中']].map(row => <article key={row[0]}>{row.map(cell => <span key={cell}>{cell}</span>)}</article>)}</div>
+          <aside><small>标签标本盒</small>{['生命周期','用户价值','专注深度','学习时段','计划执行','门店关系','卡券状态'].map(tag => <span key={tag}>{tag}</span>)}<p>标签保留证据数量、置信度、有效期与数据不足提示，并随新行为增量更新。</p></aside>
+        </div>
+      </section>
+
+      <section className="merchant-campaign-section">
+        <MerchantSectionHeading number="07" eyebrow="SMART AUDIENCE / 精准卡券" title="先圈选人群，再设计权益" />
+        <div className="merchant-stage-stamps"><span>① 先圈选人群</span><span>② 再设计权益</span></div>
+        <MerchantCampaignPreview />
+        <div className="merchant-campaign-notes"><article><b>AND 组合筛选</b><p>门店、生命周期、价值、学习时段与画像标签需要同时满足。</p></article><article><b>实时匹配人数</b><p>在设计权益前先确认目标人群是否存在，避免方案脱离数据。</p></article><article className="boundary"><b>当前边界</b><p>目前只保存活动草稿，不会直接发券；尚无营销转化成果。</p></article></div>
+      </section>
+
+      <section className="merchant-trace-section">
+        <MerchantSectionHeading number="08" eyebrow="EVIDENCE TRAIL / 行为轨迹" title="画像告诉我们“他是哪类用户”，轨迹解释“为什么这样判断”" />
+        <div className="merchant-trace-story">
+          <div className="merchant-trace-mock"><aside><b>匿名用户 A</b><span>匿名用户 B</span><span>匿名用户 C</span><span>匿名用户 D</span></aside><main>{[['20:18','回到小程序','小程序'],['19:35','进入页面','首页'],['19:32','完成专注','专注计时'],['18:50','领取卡券','权益中心']].map(([time,action,page]) => <article key={time}><time>{time}</time><i /><b>{action}</b><span>{page}</span></article>)}</main></div>
+          <div><blockquote>标签负责归纳，<br />轨迹负责举证。</blockquote><p>支持按用户、行为类型和日期回看启动、页面进入、停留与结构化操作；新埋点启用后的轨迹才完整，不暗示覆盖全部历史。</p><div className="merchant-event-chips"><span>启动</span><span>进入页面</span><span>完成专注</span><span>领取卡券</span><span>核销</span></div></div>
+        </div>
+      </section>
+
+      <section className="merchant-privacy-section">
+        <MerchantSectionHeading number="09" eyebrow="PRIVACY BY DESIGN / 权限与隐私" title="经营数据只能在被授权的范围内流动" />
+        <div className="merchant-privacy-layout">
+          <div className="merchant-permission-steps"><article><b>平台</b><span>独立平台权限</span></article><article><b>品牌</b><span>品牌授权门店范围</span></article><article><b>门店</b><span>仅查看本店关联用户</span></article></div>
+          <div className="merchant-privacy-board"><article><ShieldCheck /><h4>数据范围隔离</h4><p>服务端按账号授权的门店 ID 过滤。</p></article><article><UserRound /><h4>手机号脱敏</h4><p>前台只返回脱敏值，不展示完整号码。</p></article><article><Database /><h4>受控云函数汇总</h4><p>浏览器不直接读取业务与埋点集合。</p></article><article><BarChart3 /><h4>统计口径去重</h4><p>功能使用按用户、功能与日期聚合。</p></article></div>
+        </div>
+      </section>
+
+      <section className="merchant-close-section">
+        <MerchantSectionHeading number="10" eyebrow="DELIVERY & BOUNDARY / 交付与边界" title="从产品定义到线上数据，我负责把整条链路真正接起来" />
+        <div className="merchant-scope-line">{['产品规划','信息架构','指标口径','UX／UI','前后端开发','CloudBase','权限设计','测试部署'].map(item => <span key={item}>{item}</span>)}</div>
+        <div className="merchant-close-grid"><article><small>DELIVERED / 已完成</small><h4>可以被真实使用的经营工作台</h4><ul><li>平台／门店看板、功能分析与规则画像</li><li>行为轨迹、人群组合圈选与活动草稿</li><li>线上数据、账号权限、脱敏与统计测试</li></ul></article><article><small>NOT YET / 不夸大</small><h4>仍需要下一阶段验证</h4><ul><li>自动发券、用户通知和活动归因尚未实现</li><li>尚无增收、留存或营销转化提升结论</li></ul></article></div>
+        <div className="merchant-final-line"><span>已部署 · 已接入线上数据</span><strong>从看见数据，到知道下一步做什么。</strong></div>
+      </section>
+    </div>
+  );
+}
+
 function CaseStudyDetail({
   project,
   study,
@@ -843,11 +1182,17 @@ function CaseStudyDetail({
           <span className="case-label">{study.label}</span>
           <img className="case-study-icon" src={project.icon} alt="" aria-hidden="true" />
           <h2 id="project-modal-title">{study.title}</h2>
+          {(project.link || project.merchantLink) && (
+            <div className="case-study-launches">
+              {project.link && <a className="case-study-launch" href={project.link} target="_blank" rel="noreferrer">打开小程序 ↗</a>}
+              {project.merchantLink && <a className="case-study-launch" href={project.merchantLink} target="_blank" rel="noreferrer">打开商家网站 ↗</a>}
+            </div>
+          )}
           <p>{study.lead}</p>
           <div className="case-study-tags">{project.tags.map((tag) => <span key={tag}>{tag}</span>)}</div>
         </div>
-        <figure className="case-study-cover">
-          {study.heroVisual === "project" ? <ProjectVisual project={project} /> : <img src={study.hero.src} alt={study.hero.alt} />}
+        <figure className={`case-study-cover${project.id === "shishi" ? " shishi-case-cover" : ""}${project.id === "merchant" ? " merchant-case-cover" : ""}`}>
+          {project.id === "shishi" ? <ShishiCaseCover /> : project.id === "merchant" ? <MerchantCaseCover /> : study.heroVisual === "project" ? <ProjectVisual project={project} /> : <img src={study.hero.src} alt={study.hero.alt} />}
           <figcaption>{study.hero.alt}</figcaption>
         </figure>
         <div className="case-study-stats">
@@ -857,7 +1202,7 @@ function CaseStudyDetail({
         </div>
       </header>
 
-      {project.id === "crm" ? <CargoCaseStudySections study={study} /> : <div className="case-study-sections">
+      {project.id === "shishi" ? <ShishiCaseStudySections onOpenMerchant={onNext} /> : project.id === "merchant" ? <MerchantCaseStudySections /> : project.id === "crm" ? <CargoCaseStudySections study={study} /> : <div className="case-study-sections">
         {study.sections.map((section, sectionIndex) => {
           const pairedStory = Boolean(section.points?.length && section.images?.length === section.points.length);
           return (
@@ -922,6 +1267,8 @@ export default function Home() {
   const cursorBurstIdRef = useRef(0);
   const progressRef = useRef<HTMLDivElement>(null);
   const heroRef = useRef<HTMLElement>(null);
+  const modalRef = useRef<HTMLElement>(null);
+  const modalCloseRef = useRef<HTMLButtonElement>(null);
 
   const filtered = useMemo(
     () => (filter === "全部" ? projects : projects.filter((project) => project.category === filter)),
@@ -1014,6 +1361,14 @@ export default function Home() {
     };
   }, [activeProject]);
 
+  useEffect(() => {
+    if (!activeProject) return;
+    window.requestAnimationFrame(() => {
+      modalRef.current?.scrollTo({ top: 0, behavior: "auto" });
+      modalCloseRef.current?.focus({ preventScroll: true });
+    });
+  }, [activeProject]);
+
   const allChecked = checks.every(Boolean);
   const activeCaseStudy = activeProject ? caseStudies[activeProject.id] : undefined;
   const showNextProject = () => {
@@ -1090,7 +1445,7 @@ export default function Home() {
                     <i />
                     <div className="turning-directory" aria-label="作品集目录">
                       <div><b>01</b><span>ABOUT / 关于我</span></div>
-                      <div><b>02</b><span>INTERNSHIP / 实习经历</span></div>
+                      <div><b>02</b><span>WORK EXPERIENCE / 工作经历</span></div>
                       <div><b>03</b><span>PROJECTS / 项目</span></div>
                       <div><b>04</b><span>PRACTICE / 练习</span></div>
                       <div><b>05</b><span>CONNECT / 联系</span></div>
@@ -1102,16 +1457,16 @@ export default function Home() {
                 <div className="cover-front">
                   <i />
                   <span>SHU WEIJIA</span>
-                  <strong>作品集</strong>
+                  <strong>舒惟佳</strong>
                   <small>PRODUCT · EXPERIENCE</small>
                 </div>
                 <div className="cover-inside">
                   <div className="hero-copy cover-copy">
                     <span className="eyebrow">SHU WEIJIA · PRODUCT & AI DEVELOPMENT</span>
                     <div className="signature">舒惟佳</div>
-                    <h1>让复杂系统，<br />变得自然好用。</h1>
+                    <h1>用户研究、<br />产品设计与 AI 开发。</h1>
                     <p>产品经理 × AI 开发<br />深圳 · GMT +8</p>
-                    <a className="scribble-link" href="#experience">从实习经历开始 <span>↓</span></a>
+                    <a className="scribble-link" href="#experience">向下滑动查看工作与项目 <span>↓</span></a>
                   </div>
                 </div>
               </div>
@@ -1142,6 +1497,11 @@ export default function Home() {
                       </div>
                     </article>
                   </div>
+                  <aside className="profile-note" aria-label="个人概述">
+                    <span>PROFILE / 个人概述</span>
+                    <p>985 本硕，具备智能硬件 App AI 产品预研、AI Agent 接入及 C 端／B 端产品从 0 到 1 落地经验。在韶音负责跑者 AI 记录功能预研与 Shokz App 未来 2—3 年 AI 路线规划；作为核心成员参与「柿柿专注」小程序及商家运营网站落地，其中独立负责 AI 塔罗、计划室和 B 端运营网站等核心模块。能够从用户研究、产品定义推进至开发上线，并结合用户行为数据持续迭代。</p>
+                    <small>研究驱动 · AI 落地 · 体验设计</small>
+                  </aside>
                 </div>
                 <div className="poured-card poured-card-4 skills-card">
                   <header className="skills-card-header">
@@ -1180,7 +1540,7 @@ export default function Home() {
 
       <section className="experience section-shell" id="experience">
         <div className="experience-heading">
-          <div className="tape-title"><span>02</span> INTERNSHIP / 实习经历</div>
+          <div className="tape-title"><span>02</span> WORK EXPERIENCE / 工作经历</div>
           <h2>把用户洞察，<br />变成产品方向。</h2>
           <p>从真实运动场景出发，连接研究、策略与产品体验。</p>
         </div>
@@ -1197,30 +1557,30 @@ export default function Home() {
           </header>
 
           <p className="experience-summary">
-            围绕跑者智能耳机及配套 App，负责 AI 随心记预研、产品方案验证，以及 Shokz App 未来 2—3 年个人知识、轻量社区、AI 与商业化规划。
+            面向跑者智能耳机及配套 App，围绕“跑中不看屏、少操作”的需求，完成设备／媒体控制、场景化音乐、运动数据语音查询与 AI 随心记四类能力预研，并参与 Shokz App 未来 2—3 年个人知识、轻量社区、AI 与商业化策略探索。
           </p>
 
-          <div className="experience-metrics" aria-label="实习工作数据摘要">
+          <div className="experience-metrics" aria-label="工作经历数据摘要">
             <div><b>9 + 9</b><span>公开社区与 AI 记录产品调研</span></div>
-            <div><b>97</b><span>行功能需求清单</span></div>
-            <div><b>7</b><span>个页面层级交互 Demo</span></div>
+            <div><b>30 → 10</b><span>分钟 / 单人语料测试（含准备）</span></div>
+            <div><b>约 3 倍</b><span>相同时间内的测试吞吐提升</span></div>
           </div>
 
           <div className="experience-work">
             <article>
               <small>01 · AI 随心记</small>
               <h4>定义低打扰记录链路</h4>
-              <p>按跑步 7 个阶段归纳 5 类记录需求，将“短语音记录—AI 处理—跑后回看”确定为核心交互。</p>
+              <p>按跑步 7 个阶段归纳 5 类记录需求，确定“短语音记录—后台转写与提取—跑后回看”的低打扰交互；App 承接摘要、待办、历史与后续查询。</p>
             </article>
             <article>
               <small>02 · 产品路线</small>
               <h4>规划 App 中长期演进</h4>
-              <p>从个人知识库与被动式 AI，逐步演进至 AI 教练、AI 计划和主动式 AI，并探索会员与赛事权益协同。</p>
+              <p>先沉淀运动数据、随心记与用户确认结果，形成可复用的个人知识库；再规划 AI 教练、AI 计划与主动建议，并探索赛事、会员与品牌权益协同。</p>
             </article>
             <article>
-              <small>03 · 跨团队协作</small>
-              <h4>让方案进入验证流程</h4>
-              <p>与 UX/UI、测试及官网营销团队对齐信息架构、用户语料、社区定位和商业化承接方式。</p>
+              <small>03 · 测试流程优化</small>
+              <h4>把 AI 语料测试做得更高效</h4>
+              <p>将 Dump 操作、场景化语料呈现、静音／停顿提醒、音频转存与命名归档整合为 AI 辅助的可视化采集流程；单人测试连同前后准备由约 30 分钟缩短至约 10 分钟。</p>
             </article>
           </div>
         </article>
@@ -1229,8 +1589,8 @@ export default function Home() {
       <section className="work section-shell" id="projects">
         <div className="work-heading">
           <div className="tape-title"><span>03</span> SELECTED PROJECTS / 项目</div>
-          <h2>把想法，<br />做成真实的产品。</h2>
-          <p>悬停可以“拿起”卡片，点击打开完整项目摘要。</p>
+          <h2>从 0 到 1 产品、<br />B 端系统与智能硬件概念。</h2>
+          <p>点击查看每个项目的背景、我的职责、方案范围与实际产出。</p>
         </div>
 
         <div className="filter-bar" role="group" aria-label="筛选项目分类">
@@ -1269,7 +1629,7 @@ export default function Home() {
             <span className="eyebrow">我期待的合作</span>
             <h2>一起做点<br />值得发生的事。</h2>
             <div className="checklist">
-              {["有真实价值的问题", "重视体验与证据的团队", "允许设计走到落地"].map((item, index) => (
+              {["有真实价值的问题", "有意义的工作", "探索性团队"].map((item, index) => (
                 <button key={item} onClick={() => setChecks((current) => current.map((value, i) => i === index ? !value : value))} aria-pressed={checks[index]}>
                   <i>{checks[index] ? "✓" : ""}</i>{item}
                 </button>
@@ -1307,8 +1667,8 @@ export default function Home() {
 
       {activeProject && (
         <div className="modal-backdrop" role="presentation" onMouseDown={(event) => event.target === event.currentTarget && setActiveProject(null)}>
-          <section className={`project-modal${activeCaseStudy ? " case-study-modal" : ""}`} role="dialog" aria-modal="true" aria-labelledby="project-modal-title">
-            <button className="modal-close" onClick={() => setActiveProject(null)} aria-label="关闭项目详情">×</button>
+          <section ref={modalRef} className={`project-modal${activeCaseStudy ? " case-study-modal" : ""}`} role="dialog" aria-modal="true" aria-labelledby="project-modal-title">
+            <button ref={modalCloseRef} className="modal-close" onClick={() => setActiveProject(null)} aria-label="关闭项目详情">×</button>
             {activeCaseStudy ? (
               <CaseStudyDetail project={activeProject} study={activeCaseStudy} onNext={showNextProject} />
             ) : (
