@@ -532,7 +532,7 @@ const caseStudies: Record<string, CaseStudy> = {
         ],
         body: ["六边形单元可自由拼接成不同造型，让用户获得 DIY 参与感，同时成为城市建筑外立面中的自然景观。"],
         images: [
-          { src: "/legacy-images/yonghuliuchengfengchao.jpg", alt: "BEE HIVE 智能监控 App 界面" },
+          { src: "/legacy-images/beehive-city-effect.jpg", alt: "BEE HIVE 城市应用效果图" },
           { src: "/legacy-images/fengchaochangjing.jpg", alt: "BEE HIVE 城市应用场景" },
         ],
       },
