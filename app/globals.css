@@ -2,7 +2,7 @@
 
 @font-face {
   font-family: "JasonHandwriting2";
-  src: url("/fonts/JasonHandwriting2-Regular.woff2") format("woff2");
+  src: url("/fonts/JasonHandwriting2-Regular-subset.woff2") format("woff2");
   font-style: normal;
   font-display: swap;
   font-weight: 400;
@@ -10,7 +10,7 @@
 
 @font-face {
   font-family: "AbbrFesFont";
-  src: url("/fonts/AbbrFesFont.ttf") format("truetype");
+  src: url("/fonts/AbbrFesFont-subset.woff2") format("woff2");
   font-style: normal;
   font-display: swap;
   font-weight: 400;
