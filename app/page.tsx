@@ -2,6 +2,7 @@
 
 import { useEffect, useMemo, useRef, useState } from "react";
 import {
+  ArrowUpRight,
   ArchiveRestore,
   BarChart3,
   CalendarClock,
@@ -702,7 +703,7 @@ function TiltCard({ project, onOpen }: { project: Project; onOpen: () => void })
       <div className="project-photo-frame">
         <img className="project-doodle-icon" src={project.icon} alt="" aria-hidden="true" />
         <ProjectVisual project={project} compact />
-        <span className="view-project">打开项目 ↗</span>
+        <span className="view-project">打开项目 <ArrowUpRight aria-hidden="true" size={15} strokeWidth={2.1} /></span>
       </div>
       <div className="project-card-copy">
         <span className="project-index">{project.year}</span>
@@ -1715,7 +1716,7 @@ export default function Home() {
                     </div>
                   )}
                   {activeProject.link && (
-                    <a className="external-project" href={activeProject.link} target="_blank" rel="noreferrer">打开原项目 ↗</a>
+                    <a className="external-project" href={activeProject.link} target="_blank" rel="noreferrer">打开原项目 <ArrowUpRight aria-hidden="true" size={13} strokeWidth={2.1} /></a>
                   )}
                   <button className="next-project" onClick={showNextProject}>下一个内容 <span>→</span></button>
                 </div>

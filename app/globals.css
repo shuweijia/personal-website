@@ -309,7 +309,8 @@ main { position:relative; min-height: 100vh; }
 .visual-practice img { width:42%; height:42%; object-fit:contain; filter:drop-shadow(5px 7px 0 rgba(185,57,49,.18)); }
 .visual-practice strong { font:600 clamp(24px,3vw,38px)/1 Georgia,"Songti SC",serif; }
 .visual-practice small { color:#806c63; font:700 7px/1 ui-monospace,monospace; letter-spacing:.12em; }
-.view-project { position: absolute; right: 22px; bottom: 22px; z-index: 2; padding: 9px 12px; color: var(--ink); background: var(--paper-light); border: 1px solid var(--ink); border-radius: 99px; font: 400 14px/1 var(--nav-font); letter-spacing: .04em; transform: translateY(14px); opacity: 0; transition: .28s; }
+.view-project { position: absolute; right: 22px; bottom: 22px; z-index: 2; display: inline-flex; align-items: center; gap: 6px; padding: 9px 12px; color: var(--ink); background: var(--paper-light); border: 1px solid var(--ink); border-radius: 99px; font: 400 14px/1 var(--nav-font); letter-spacing: .04em; transform: translateY(14px); opacity: 0; transition: .28s; }
+.view-project svg,.external-project svg { flex: 0 0 auto; }
 .project-card:hover .view-project,.project-card:focus-visible .view-project { opacity: 1; transform: translateY(0); }
 .project-card-copy { padding: 28px 13px 0; position: relative; }
 .project-index { position: absolute; right: 13px; top: 33px; color: var(--red); font: 600 11px monospace; }
@@ -386,7 +387,7 @@ footer { margin-top:95px;padding:24px 0 0;border-top:1px solid rgba(240,223,199,
 .modal-tags span { color:#705d55;border-color:rgba(29,27,27,.2); }
 .modal-gallery { display:grid;grid-template-columns:repeat(3,1fr);gap:7px;margin-top:24px; }
 .modal-gallery img { width:100%;aspect-ratio:1.15;object-fit:cover;border:2px solid var(--ink);border-radius:5px; }
-.external-project { display:inline-flex;margin-top:22px;padding:10px 14px;border:2px solid var(--ink);font-size:10px;font-weight:800;transition:.2s; }
+.external-project { display:inline-flex;align-items:center;gap:5px;margin-top:22px;padding:10px 14px;border:2px solid var(--ink);font-size:10px;font-weight:800;transition:.2s; }
 .external-project:hover { background:var(--ink);color:var(--paper-light);transform:rotate(-1deg); }
 .next-project { width:100%;margin-top:38px;padding:14px 0;border:0;border-top:2px solid var(--ink);background:transparent;color:var(--ink);font-weight:800;font-size:11px;display:flex;justify-content:space-between;cursor:pointer; }
 .next-project span { font-size:18px;transition:transform .2s; }.next-project:hover span { transform:translateX(7px); }
