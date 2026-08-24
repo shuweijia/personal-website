@@ -56,9 +56,9 @@ test("keeps the Shishi and merchant case-study visuals compact and source-backed
     source.indexOf('if (project.visual === "shishi")'),
     source.indexOf('if (project.visual === "merchant")'),
   );
-  assert.match(shishiCard, /IMG_9718\.PNG/);
-  assert.match(shishiCard, /IMG_9738\.PNG/);
-  assert.match(shishiCard, /IMG_9725\.PNG/);
+  assert.match(shishiCard, /IMG_9718-card\.jpg/);
+  assert.match(shishiCard, /IMG_9738-card\.jpg/);
+  assert.match(shishiCard, /IMG_9725-card\.jpg/);
   assert.doesNotMatch(shishiCard, /phone-shell|完成作品集首页/);
   assert.match(source, /IMG_9742\.PNG" alt="柿柿专注线上自习室空间选择界面"/);
 

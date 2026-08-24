@@ -599,7 +599,7 @@ function ProjectVisual({ project, compact = false }: { project: Project; compact
     return (
       <div className="project-image visual-mindanchor" role="img" aria-label="MindAnchor 任务节奏与专注陪伴界面示意">
         <span className="project-cover-kicker">ADHD · AI COMPANION</span>
-        <div className="project-cover-board"><img src="/legacy-images/mindanchor.jpg" alt="MindAnchor 任务时间线界面" /></div>
+        <div className="project-cover-board"><img src="/legacy-images/mindanchor.jpg" alt="MindAnchor 任务时间线界面" loading="lazy" /></div>
       </div>
     );
   }
@@ -608,7 +608,7 @@ function ProjectVisual({ project, compact = false }: { project: Project; compact
     return (
       <div className="project-image visual-cargoware" role="img" aria-label="CargoWare CRM 客户跟进界面示意">
         <span className="project-cover-kicker">SALES · FOLLOW-UP · CRM</span>
-        <div className="project-cover-board"><img src="/legacy-images/cargoware.jpg" alt="CargoWare CRM 销售跟进界面" /></div>
+        <div className="project-cover-board"><img src="/legacy-images/cargoware.jpg" alt="CargoWare CRM 销售跟进界面" loading="lazy" /></div>
       </div>
     );
   }
@@ -616,7 +616,7 @@ function ProjectVisual({ project, compact = false }: { project: Project; compact
   if (project.image) {
     return (
       <div className={`project-image ${compact ? "compact" : ""}`}>
-        <img src={project.image} alt={`${project.title} 项目封面`} />
+        <img src={project.image} alt={`${project.title} 项目封面`} loading="lazy" />
       </div>
     );
   }
@@ -626,9 +626,9 @@ function ProjectVisual({ project, compact = false }: { project: Project; compact
       <div className="project-image visual-shishi" role="img" aria-label="柿柿专注首页、计划室与 AI 服务真实界面组合">
         <span className="shishi-card-kicker">FOCUS · PLAN · SPACE</span>
         <div className="shishi-card-screens" aria-hidden="true">
-          <figure className="shishi-card-screen shishi-card-screen-home"><img src="/shishi-ui/IMG_9718.PNG" alt="" /></figure>
-          <figure className="shishi-card-screen shishi-card-screen-plan"><img src="/shishi-ui/IMG_9738.PNG" alt="" /></figure>
-          <figure className="shishi-card-screen shishi-card-screen-ai"><img src="/shishi-ui/IMG_9725.PNG" alt="" /></figure>
+          <figure className="shishi-card-screen shishi-card-screen-home"><img src="/shishi-ui/IMG_9718-card.jpg" alt="" loading="lazy" /></figure>
+          <figure className="shishi-card-screen shishi-card-screen-plan"><img src="/shishi-ui/IMG_9738-card.jpg" alt="" loading="lazy" /></figure>
+          <figure className="shishi-card-screen shishi-card-screen-ai"><img src="/shishi-ui/IMG_9725-card.jpg" alt="" loading="lazy" /></figure>
         </div>
       </div>
     );
@@ -639,7 +639,7 @@ function ProjectVisual({ project, compact = false }: { project: Project; compact
       <div className="project-image visual-merchant" aria-label="柿柿专注数据与经营平台界面示意">
         <span className="merchant-card-note">DATA → AUDIENCE → ACTION</span>
         <div className="merchant-card-board">
-          <div className="merchant-card-shot"><img src="/merchant-ui/platform-overview.png" alt="柿柿专注平台数据总览" /></div>
+          <div className="merchant-card-shot"><img src="/merchant-ui/platform-overview-card.png" alt="柿柿专注平台数据总览" loading="lazy" /></div>
         </div>
       </div>
     );
@@ -1425,7 +1425,7 @@ export default function Home() {
       </div>
 
       <nav className="top-nav" aria-label="主导航">
-        <a className="nav-mark" href="#top" aria-label="返回首页"><span>惟</span><img className="nav-mark-doodle" src="/handdrawn-assets/generated/shuweijia-nav-wave.png" alt="" aria-hidden="true" /></a>
+        <a className="nav-mark" href="#top" aria-label="返回首页"><span>惟</span><img className="nav-mark-doodle" src="/handdrawn-assets/generated/shuweijia-nav-wave-small.png" alt="" aria-hidden="true" /></a>
         <div>
           <a href="#about"><span>关于</span><img className="nav-doodle" src="/handdrawn-assets/icon-bird.png" alt="" aria-hidden="true" /></a>
           <a href="#experience"><span>实习</span><img className="nav-doodle" src="/handdrawn-assets/icon-run.png" alt="" aria-hidden="true" /></a>
