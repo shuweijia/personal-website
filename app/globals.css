@@ -590,8 +590,8 @@ footer { margin-top:95px;padding:24px 0 0;border-top:1px solid rgba(240,223,199,
 .merchant-preview-toolbar small{color:#f4c27c;font:900 6px/1 ui-monospace,monospace;letter-spacing:.12em}
 .merchant-preview-toolbar b{font:800 14px/1.1 var(--heading-font)}
 .merchant-preview-toolbar>span{padding:6px 9px;border:1px solid rgba(247,234,215,.42);border-radius:99px;font-size:7px}
-.merchant-campaign-workspace{display:grid;grid-template-columns:1.08fr .92fr}
-.merchant-campaign-workspace>aside,.merchant-campaign-workspace>main{min-width:0;padding:18px 20px}
+.merchant-campaign-workspace{display:grid;grid-template-columns:1.08fr .92fr;align-items:stretch}
+.merchant-campaign-workspace>aside,.merchant-campaign-workspace>main{min-width:0;min-height:0;height:auto;padding:18px 20px}
 .merchant-campaign-workspace>aside{border-right:1px solid #e6cabc;background:#f9eee3}
 .merchant-campaign-workspace>main{display:flex;flex-direction:column;background:#fffaf2}
 .merchant-preview-panel-title{display:flex;align-items:center;gap:8px;margin-bottom:13px}
@@ -616,6 +616,7 @@ footer { margin-top:95px;padding:24px 0 0;border-top:1px solid rgba(240,223,199,
 .merchant-campaign-notes .boundary{background:#f5c887;border-top-color:var(--merchant-green)}
 
 .merchant-trace-mock{border-color:#f4c27c}
+.merchant-trace-mock main{min-height:0}
 .merchant-trace-mock main i{background:var(--merchant-green-2)}
 .merchant-trace-story blockquote{color:var(--merchant-paper)}
 .merchant-trace-story p{color:#f0d8ca}
