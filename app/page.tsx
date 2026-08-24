@@ -595,6 +595,24 @@ const portfolioItems = [...projects, ...practices];
 const categories = ["全部", "产品", "体验"] as const;
 
 function ProjectVisual({ project, compact = false }: { project: Project; compact?: boolean }) {
+  if (project.id === "mindanchor") {
+    return (
+      <div className="project-image visual-mindanchor" role="img" aria-label="MindAnchor 任务节奏与专注陪伴界面示意">
+        <span className="project-cover-kicker">ADHD · AI COMPANION</span>
+        <div className="project-cover-board"><img src="/legacy-images/mindanchor.jpg" alt="MindAnchor 任务时间线界面" /></div>
+      </div>
+    );
+  }
+
+  if (project.id === "crm") {
+    return (
+      <div className="project-image visual-cargoware" role="img" aria-label="CargoWare CRM 客户跟进界面示意">
+        <span className="project-cover-kicker">SALES · FOLLOW-UP · CRM</span>
+        <div className="project-cover-board"><img src="/legacy-images/cargoware.jpg" alt="CargoWare CRM 销售跟进界面" /></div>
+      </div>
+    );
+  }
+
   if (project.image) {
     return (
       <div className={`project-image ${compact ? "compact" : ""}`}>
@@ -607,16 +625,11 @@ function ProjectVisual({ project, compact = false }: { project: Project; compact
     return (
       <div className="project-image visual-shishi" role="img" aria-label="柿柿专注首页、计划室与 AI 服务真实界面组合">
         <span className="shishi-card-kicker">FOCUS · PLAN · SPACE</span>
-        <div className="shishi-card-copy">
-          <strong>柿柿专注</strong>
-          <span>把“想学”<br />带回今天。</span>
-        </div>
         <div className="shishi-card-screens" aria-hidden="true">
           <figure className="shishi-card-screen shishi-card-screen-home"><img src="/shishi-ui/IMG_9718.PNG" alt="" /></figure>
           <figure className="shishi-card-screen shishi-card-screen-plan"><img src="/shishi-ui/IMG_9738.PNG" alt="" /></figure>
           <figure className="shishi-card-screen shishi-card-screen-ai"><img src="/shishi-ui/IMG_9725.PNG" alt="" /></figure>
         </div>
-        <span className="shishi-card-stamp">小程序 × AI × 自习室</span>
       </div>
     );
   }
@@ -625,12 +638,8 @@ function ProjectVisual({ project, compact = false }: { project: Project; compact
     return (
       <div className="project-image visual-merchant" aria-label="柿柿专注数据与经营平台界面示意">
         <span className="merchant-card-note">DATA → AUDIENCE → ACTION</span>
-        <div className="merchant-card-window">
-          <div className="merchant-window-bar"><i /><i /><i /></div>
+        <div className="merchant-card-board">
           <div className="merchant-card-shot"><img src="/merchant-ui/platform-overview.png" alt="柿柿专注平台数据总览" /></div>
-        </div>
-        <div className="merchant-card-float">
-          <b>精准卡券</b><strong>动态</strong><span>实时匹配人数</span><i /><i /><i />
         </div>
       </div>
     );
@@ -1407,7 +1416,7 @@ export default function Home() {
       </div>
 
       <nav className="top-nav" aria-label="主导航">
-        <a className="nav-mark" href="#top" aria-label="返回首页">惟</a>
+        <a className="nav-mark" href="#top" aria-label="返回首页"><span>惟</span><img className="nav-mark-doodle" src="/handdrawn-assets/generated/shuweijia-nav-wave.png" alt="" aria-hidden="true" /></a>
         <div>
           <a href="#about"><span>关于</span><img className="nav-doodle" src="/handdrawn-assets/icon-bird.png" alt="" aria-hidden="true" /></a>
           <a href="#experience"><span>实习</span><img className="nav-doodle" src="/handdrawn-assets/icon-run.png" alt="" aria-hidden="true" /></a>
@@ -1660,7 +1669,7 @@ export default function Home() {
         </div>
         <footer>
           <span>© 2026 SHU WEIJIA</span>
-          <a href="#top">回到顶部 ↑</a>
+          <a className="back-to-top" href="#top" aria-label="回到页面顶部"><i aria-hidden="true">↗</i><span>回到开场</span></a>
           <span>深圳 · 可接受城市不限</span>
         </footer>
       </section>
