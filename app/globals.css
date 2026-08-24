@@ -1,21 +1,5 @@
 @import "tailwindcss";
 
-@font-face {
-  font-family: "JasonHandwriting2";
-  src: url("https://cdn.jsdelivr.net/gh/max32002/JasonHandWritingFonts@20240409/webfont/JasonHandwriting2-Regular.woff2") format("woff2");
-  font-style: normal;
-  font-display: swap;
-  font-weight: 400;
-}
-
-@font-face {
-  font-family: "AbbrFesFont";
-  src: url("https://cdn.jsdelivr.net/gh/justfont/AbbrFesFont@2eded0ec475dbb8fb47d104493b51e028de27c78/font/AbbrFesFont.ttf") format("truetype");
-  font-style: normal;
-  font-display: swap;
-  font-weight: 400;
-}
-
 :root {
   --ink: #1d1b1b;
   --ink-soft: #252222;
@@ -26,7 +10,7 @@
   --chalk: #f2e6d5;
   --muted: #ac9f92;
   --heading-font: "PingFang SC", "PingFang TC", "Helvetica Neue", "Microsoft YaHei", sans-serif;
-  --nav-font: "JasonHandwriting2", "Kaiti SC", cursive;
+  --nav-font: "Kaiti SC", "STKaiti", "KaiTi", cursive;
 }
 
 * { box-sizing: border-box; }
@@ -215,7 +199,7 @@ main { min-height: 100vh; }
 .scroll-story-cue i { width:28px; height:28px; display:grid; place-items:center; border:1px solid; border-radius:50%; font-style:normal; animation:scroll-nudge .8s ease-in-out infinite alternate; }
 .hero-copy { padding: 70px 34px 48px 42px; display: flex; flex-direction: column; align-items: flex-start; justify-content: center; }
 .hero-copy .eyebrow { color: var(--red-dark); letter-spacing: .12em; }
-.signature { margin: 36px 0 8px; font-family: "AbbrFesFont", "Kaiti SC", "STKaiti", cursive; font-size: 43px; transform: rotate(-7deg); }
+.signature { margin: 36px 0 8px; font-family: "Kaiti SC", "STKaiti", "KaiTi", cursive; font-size: 43px; transform: rotate(-7deg); }
 .hero h1 { margin: 0; font: 500 clamp(42px, 5.3vw, 68px)/.98 Georgia, "Songti SC", serif; letter-spacing: -.045em; }
 .hero-copy > p { margin: 26px 0 34px; color: #b5483c; line-height: 1.8; font-size: 14px; }
 .scribble-link { display: inline-flex; align-items: center; gap: 20px; border-bottom: 1px solid rgba(185,57,49,.45); padding: 8px 0; font-size: 12px; font-weight: 700; }
