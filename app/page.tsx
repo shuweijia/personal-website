@@ -1275,6 +1275,8 @@ export default function Home() {
   const cursorRef = useRef<HTMLDivElement>(null);
   const cursorBurstIdRef = useRef(0);
   const progressRef = useRef<HTMLDivElement>(null);
+  const leftRailRef = useRef<HTMLDivElement>(null);
+  const rightRailRef = useRef<HTMLDivElement>(null);
   const heroRef = useRef<HTMLElement>(null);
   const modalRef = useRef<HTMLElement>(null);
   const modalCloseRef = useRef<HTMLButtonElement>(null);
@@ -1300,6 +1302,9 @@ export default function Home() {
       const max = document.documentElement.scrollHeight - window.innerHeight;
       const value = max > 0 ? window.scrollY / max : 0;
       progressRef.current?.style.setProperty("--progress", String(value));
+      const railOffset = `${-window.scrollY * 0.08}px`;
+      leftRailRef.current?.style.setProperty("--rail-offset", railOffset);
+      rightRailRef.current?.style.setProperty("--rail-offset", railOffset);
 
       const hero = heroRef.current;
       if (!hero) return;
@@ -1415,14 +1420,8 @@ export default function Home() {
           </svg>
         </span>
       ))}
-      <div className="edge-rail left" aria-hidden="true">
-        <img src="/handdrawn-assets/side-rail-left.png" alt="" />
-        <img src="/handdrawn-assets/side-rail-left.png" alt="" />
-      </div>
-      <div className="edge-rail right" aria-hidden="true">
-        <img src="/handdrawn-assets/side-rail-right.png" alt="" />
-        <img src="/handdrawn-assets/side-rail-right.png" alt="" />
-      </div>
+      <div ref={leftRailRef} className="edge-rail left" aria-hidden="true" />
+      <div ref={rightRailRef} className="edge-rail right" aria-hidden="true" />
 
       <nav className="top-nav" aria-label="主导航">
         <a className="nav-mark" href="#top" aria-label="返回首页"><span>惟</span><img className="nav-mark-doodle" src="/handdrawn-assets/generated/shuweijia-nav-wave-small.png" alt="" aria-hidden="true" /></a>
