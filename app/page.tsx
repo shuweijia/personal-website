@@ -48,12 +48,12 @@ type CursorBurst = {
 };
 
 const contactDoodles = [
-  { src: "/handdrawn-assets/generated/shuweijia-planning.png", alt: "舒惟佳正在规划" },
-  { src: "/handdrawn-assets/generated/shuweijia-presenting.png", alt: "舒惟佳正在展示数据看板" },
-  { src: "/handdrawn-assets/generated/shuweijia-thinking.png", alt: "舒惟佳正在思考" },
-  { src: "/handdrawn-assets/generated/shuweijia-waving.png", alt: "舒惟佳挥手拿着电脑" },
-  { src: "/handdrawn-assets/generated/shuweijia-celebrating.png", alt: "舒惟佳庆祝成功" },
-  { src: "/handdrawn-assets/generated/shuweijia-drawing.png", alt: "舒惟佳正在画图" },
+  { src: "/handdrawn-assets/generated/shuweijia-planning.webp", alt: "舒惟佳正在规划" },
+  { src: "/handdrawn-assets/generated/shuweijia-presenting.webp", alt: "舒惟佳正在展示数据看板" },
+  { src: "/handdrawn-assets/generated/shuweijia-thinking.webp", alt: "舒惟佳正在思考" },
+  { src: "/handdrawn-assets/generated/shuweijia-waving.webp", alt: "舒惟佳挥手拿着电脑" },
+  { src: "/handdrawn-assets/generated/shuweijia-celebrating.webp", alt: "舒惟佳庆祝成功" },
+  { src: "/handdrawn-assets/generated/shuweijia-drawing.webp", alt: "舒惟佳正在画图" },
 ];
 
 type CaseStudyPoint = {
@@ -80,12 +80,12 @@ type CaseStudy = {
 };
 
 const portraitPhotos = [
-  { src: "/legacy-images/zhengjianzhao.JPG", alt: "舒惟佳证件照", position: "center 28%" },
-  { src: "/portrait-gallery/portrait-02-flowers.jpg", alt: "舒惟佳在窗边手捧花束", position: "center 42%" },
-  { src: "/portrait-gallery/portrait-03-lamb.jpg", alt: "舒惟佳在草原抱着小羊", position: "center 38%" },
-  { src: "/portrait-gallery/portrait-04-lake.jpg", alt: "舒惟佳站在湖边", position: "center 42%" },
-  { src: "/portrait-gallery/portrait-05-grassland.jpg", alt: "舒惟佳在草原上张开双臂", position: "center 56%" },
-  { src: "/portrait-gallery/portrait-06-autumn.jpg", alt: "舒惟佳在秋日山景前", position: "center 44%" },
+  { src: "/legacy-images/zhengjianzhao.webp", alt: "舒惟佳证件照", position: "center 28%" },
+  { src: "/portrait-gallery/portrait-02-flowers.webp", alt: "舒惟佳在窗边手捧花束", position: "center 42%" },
+  { src: "/portrait-gallery/portrait-03-lamb.webp", alt: "舒惟佳在草原抱着小羊", position: "center 38%" },
+  { src: "/portrait-gallery/portrait-04-lake.webp", alt: "舒惟佳站在湖边", position: "center 42%" },
+  { src: "/portrait-gallery/portrait-05-grassland.webp", alt: "舒惟佳在草原上张开双臂", position: "center 56%" },
+  { src: "/portrait-gallery/portrait-06-autumn.webp", alt: "舒惟佳在秋日山景前", position: "center 44%" },
 ];
 
 const projects: Project[] = [
@@ -101,7 +101,7 @@ const projects: Project[] = [
     outcome:
       "V1 已于 2026.08.03 上线，在 3 家自习室冷启动；合作资源拓展至 18 个品牌、60 余家门店，并完成连接线上数据的商家运营网站。",
     tags: ["0—1 产品", "AI 能力", "C 端 + B 端"],
-    icon: "/handdrawn-assets/icon-focus.png",
+    icon: "/handdrawn-assets/icon-focus.webp",
     link: "https://wxmpurl.cn/U5Yn4WuV7jh",
     merchantLink: "https://merchant-admin-web-cloud1-7gb1r3mm0c292233.webapps.tcloudbase.com",
     visual: "shishi",
@@ -119,7 +119,7 @@ const projects: Project[] = [
     outcome:
       "独立完成产品规划、指标与权限设计、交互界面、前后端开发、CloudBase 数据接入及线上部署；已支持规则画像、人群圈选和活动草稿，自动发券与营销转化验证尚未实现。",
     tags: ["B 端数据产品", "用户画像", "精细化运营"],
-    icon: "/handdrawn-assets/icon-crm.png",
+    icon: "/handdrawn-assets/icon-crm.webp",
     merchantLink: "https://merchant-admin-web-cloud1-7gb1r3mm0c292233.webapps.tcloudbase.com",
     visual: "merchant",
     accent: "#236447",
@@ -136,9 +136,9 @@ const projects: Project[] = [
     outcome:
       "独立推进需求拆解、体验方案和 AI Coding 落地，并完成可访问的交互产品版本。",
     tags: ["AI 陪伴", "ADHD 辅助", "全栈落地"],
-    icon: "/handdrawn-assets/icon-tarot.png",
-    image: "/legacy-images/mindanchor.jpg",
-    gallery: ["/legacy-images/mindanchor.jpg"],
+    icon: "/handdrawn-assets/icon-tarot.webp",
+    image: "/legacy-images/mindanchor.webp",
+    gallery: ["/legacy-images/mindanchor.webp"],
     link: "https://wcnp7sqisgpt.aiforce.cloud/app/app_4jpb099bjexa5/timeline",
     accent: "#8b78e6",
   },
@@ -154,9 +154,9 @@ const projects: Project[] = [
     outcome:
       "在 1 周内完成需求分析、V1.0 PRD 与可交互高保真原型，并规划 V1—V3 的产品演进路线。",
     tags: ["B 端 CRM", "信息架构", "复杂规则"],
-    icon: "/handdrawn-assets/icon-crm.png",
-    image: "/legacy-images/cargoware.jpg",
-    gallery: ["/legacy-images/cargoware.jpg"],
+    icon: "/handdrawn-assets/icon-crm.webp",
+    image: "/legacy-images/cargoware.webp",
+    gallery: ["/legacy-images/cargoware.webp"],
     accent: "#72c7bc",
   },
 ];
@@ -173,15 +173,15 @@ const practices: Project[] = [
       "面向高层火灾救援场景，探索无人机如何协助消防人员获取信息、引导受困者并建立沟通。",
     outcome: "3 人团队完成概念体验方案；我负责前期调研、竞品分析、草图设计与部分三维建模。项目获 2022 年“智博杯”工业设计大赛优秀奖。",
     tags: ["用户研究", "多模态交互", "三维建模"],
-    icon: "/handdrawn-assets/icon-drone.png",
-    image: "/legacy-images/DRAGONFL UAV.jpg",
+    icon: "/handdrawn-assets/icon-drone.webp",
+    image: "/legacy-images/DRAGONFL UAV.webp",
     gallery: [
-      "/legacy-images/DRAGONFL UAV.jpg",
-      "/legacy-images/sky-land.jpg",
-      "/legacy-images/dengguang.jpg",
-      "/legacy-images/camera.jpg",
-      "/legacy-images/ganfen.jpg",
-      "/legacy-images/yaopin.jpg",
+      "/legacy-images/DRAGONFL UAV.webp",
+      "/legacy-images/sky-land.webp",
+      "/legacy-images/dengguang.webp",
+      "/legacy-images/camera.webp",
+      "/legacy-images/ganfen.webp",
+      "/legacy-images/yaopin.webp",
     ],
     accent: "#d94a3f",
   },
@@ -196,14 +196,14 @@ const practices: Project[] = [
       "城市智能养蜂概念设计，探索人蜂分离、自助取蜜与状态监测的一体化体验。",
     outcome: "完成硬件、配套 App 与成果分享流程的全链路设计，并获得外观设计专利。",
     tags: ["IoT", "软硬一体", "外观专利"],
-    icon: "/handdrawn-assets/icon-beehive.png",
-    image: "/legacy-images/BEE HIVE.jpg",
+    icon: "/handdrawn-assets/icon-beehive.webp",
+    image: "/legacy-images/BEE HIVE.webp",
     gallery: [
-      "/legacy-images/BEE HIVE.jpg",
-      "/legacy-images/fengchaochangjing.jpg",
-      "/legacy-images/caotufengchao.jpg",
-      "/legacy-images/baozhatufengchao.jpg",
-      "/legacy-images/yonghuliuchengfengchao.jpg",
+      "/legacy-images/BEE HIVE.webp",
+      "/legacy-images/fengchaochangjing.webp",
+      "/legacy-images/caotufengchao.webp",
+      "/legacy-images/baozhatufengchao.webp",
+      "/legacy-images/yonghuliuchengfengchao.webp",
     ],
     accent: "#e1a63f",
   },
@@ -218,15 +218,15 @@ const practices: Project[] = [
       "围绕共享充电宝的取放与归还体验，进行产品造型与人机细节设计。",
     outcome: "获得 European Product Design Award Winner。",
     tags: ["产品设计", "CMF", "人机细节"],
-    icon: "/handdrawn-assets/icon-powerbank.png",
-    image: "/legacy-images/ICPB.jpg",
+    icon: "/handdrawn-assets/icon-powerbank.webp",
+    image: "/legacy-images/ICPB.webp",
     gallery: [
-      "/legacy-images/ICPB.jpg",
-      "/legacy-images/cdb-caotu.jpg",
-      "/legacy-images/cdb-tanchu.jpg",
-      "/legacy-images/cdb-naqu.jpg",
-      "/legacy-images/cdb-chongdian.jpg",
-      "/legacy-images/cdbchangjing.jpg",
+      "/legacy-images/ICPB.webp",
+      "/legacy-images/cdb-caotu.webp",
+      "/legacy-images/cdb-tanchu.webp",
+      "/legacy-images/cdb-naqu.webp",
+      "/legacy-images/cdb-chongdian.webp",
+      "/legacy-images/cdbchangjing.webp",
     ],
     accent: "#79bdd8",
   },
@@ -323,7 +323,7 @@ const caseStudies: Record<string, CaseStudy> = {
     title: "把小程序行为，变成门店下一步的经营依据。",
     lead:
       "线下自习室能看到到店和消费，却很难持续理解用户离店后的学习行为。我独立设计并开发数据与经营平台，将分散在小程序中的引流、专注、功能使用、积分、卡券与门店关系汇总为一条可回溯的证据链，帮助平台和门店从“看到数字”走向“识别人群、设计行动”。",
-    hero: { src: "/merchant-ui/platform-overview.png", alt: "柿柿专注数据与经营平台界面" },
+    hero: { src: "/merchant-ui/platform-overview.webp", alt: "柿柿专注数据与经营平台界面" },
     stats: [
       { label: "项目类型", value: "B 端数据产品" },
       { label: "我的角色", value: "产品负责人 / 全栈开发" },
@@ -337,7 +337,7 @@ const caseStudies: Record<string, CaseStudy> = {
     title: "CargoWare CRM：让销售跟进可追溯、可协同",
     lead:
       "这是一个面向国际货代销售跟进场景的 B 端产品设计项目。我通过半结构化访谈、业务流程梳理和原型设计，将分散在微信、QQ 等渠道的沟通转化为“客户筛选—新增跟进—历史追溯—统计分析—下一步行动”的系统方案。",
-    hero: { src: "/legacy-images/cargoware.jpg", alt: "CargoWare 国际货代 CRM 销售跟进模块界面" },
+    hero: { src: "/legacy-images/cargoware.webp", alt: "CargoWare 国际货代 CRM 销售跟进模块界面" },
     stats: [
       { label: "项目类型", value: "B 端 CRM" },
       { label: "我的角色", value: "原型产品设计 / UX" },
@@ -409,7 +409,7 @@ const caseStudies: Record<string, CaseStudy> = {
     title: "蜓火 · 高楼消防无人机",
     lead:
       "一个为期 6 周的高楼消防辅助救援概念设计项目。团队从火灾信息延迟、受困者引导和现场沟通切入，提出视觉、语音与动作识别的多模态交互方案；我主要负责调研、竞品分析、草图与部分建模。",
-    hero: { src: "/legacy-images/DRAGONFL UAV.jpg", alt: "蜓火无人机主渲染图" },
+    hero: { src: "/legacy-images/DRAGONFL UAV.webp", alt: "蜓火无人机主渲染图" },
     stats: [
       { label: "成果", value: "智博杯优秀奖" },
       { label: "团队", value: "3 人" },
@@ -428,7 +428,7 @@ const caseStudies: Record<string, CaseStudy> = {
           { title: "自救与决策考验", body: "被困者逃生知识和外部消防员的及时决策均面临巨大考验。" },
           { title: "缺乏现场感知", body: "消防员无法及时掌握火场状况与全部被困者位置。" },
         ],
-        images: [{ src: "/legacy-images/dragonfly-user-map.png", alt: "高楼火灾数据调研图表" }],
+        images: [{ src: "/legacy-images/dragonfly-user-map.webp", alt: "高楼火灾数据调研图表" }],
       },
       {
         title: "概念方案中的多模态交互",
@@ -440,10 +440,10 @@ const caseStudies: Record<string, CaseStudy> = {
           { title: "04 · 空陆状态转换", body: "借助尾部叶轮与折叠结构，在室外高空、室内和狭窄通道中切换移动方式。" },
         ],
         images: [
-          { src: "/legacy-images/dengguang.jpg", alt: "信号灯交互界面" },
-          { src: "/legacy-images/camera.jpg", alt: "手势识别镜头与交互演示" },
-          { src: "/legacy-images/dragonfly-voice.jpg", alt: "语音模块与界面展示" },
-          { src: "/legacy-images/sky-land.jpg", alt: "蜓火无人机空陆转换姿态" },
+          { src: "/legacy-images/dengguang.webp", alt: "信号灯交互界面" },
+          { src: "/legacy-images/camera.webp", alt: "手势识别镜头与交互演示" },
+          { src: "/legacy-images/dragonfly-voice.webp", alt: "语音模块与界面展示" },
+          { src: "/legacy-images/sky-land.webp", alt: "蜓火无人机空陆转换姿态" },
         ],
       },
       {
@@ -453,8 +453,8 @@ const caseStudies: Record<string, CaseStudy> = {
           { title: "医疗救治与显示", body: "机身搭载紧急医疗物资舱和高清屏幕，可投递急救包、防烟面罩并演示急救步骤或逃生地图。" },
         ],
         images: [
-          { src: "/legacy-images/dragonfly-firefighting.png", alt: "蜓火无人机灭火模块细节" },
-          { src: "/legacy-images/yaopin.jpg", alt: "医疗物资舱与高清显示屏幕" },
+          { src: "/legacy-images/dragonfly-firefighting.webp", alt: "蜓火无人机灭火模块细节" },
+          { src: "/legacy-images/yaopin.webp", alt: "医疗物资舱与高清显示屏幕" },
         ],
       },
       {
@@ -467,7 +467,7 @@ const caseStudies: Record<string, CaseStudy> = {
           { title: "多机协同", body: "提出多机共享信息、协同通信和任务分配的概念。" },
           { title: "远程监控与测绘", body: "设想通过摄像机与红外扫描获取现场信息，辅助救援判断。" },
         ],
-        images: [{ src: "/legacy-images/dragonfly-exploded.png", alt: "蜓火无人机爆炸结构图" }],
+        images: [{ src: "/legacy-images/dragonfly-exploded.webp", alt: "蜓火无人机爆炸结构图" }],
       },
     ],
   },
@@ -476,7 +476,7 @@ const caseStudies: Record<string, CaseStudy> = {
     title: "BEE HIVE · 城市智能养蜂",
     lead:
       "针对传统养蜂操作门槛高、状态不可见、取蜜繁琐的问题，确立“人蜂分离 + 智能托管”的产品定位，并把硬件、监控 App 与成果分享串成完整体验。",
-    hero: { src: "/legacy-images/BEE HIVE.jpg", alt: "BEE HIVE 城市智能蜂箱主效果图" },
+    hero: { src: "/legacy-images/BEE HIVE.webp", alt: "BEE HIVE 城市智能蜂箱主效果图" },
     stats: [
       { label: "成果", value: "外观设计专利" },
       { label: "团队", value: "2 人" },
@@ -499,7 +499,7 @@ const caseStudies: Record<string, CaseStudy> = {
           { title: "功能创意", body: "将蜂箱、采蜜机和蜜蜂观察箱结合，并以可自由组装的六边形单元吸引年轻用户。" },
           { title: "结构创意", body: "利用两个蜂脾错位使蜂蜜自行流出，并将接蜜盒与引蜜管连接，简化取蜜过程。" },
         ],
-        images: [{ src: "/legacy-images/beehive-ideation.png", alt: "BEE HIVE 头脑风暴与结构创意" }],
+        images: [{ src: "/legacy-images/beehive-ideation.webp", alt: "BEE HIVE 头脑风暴与结构创意" }],
       },
       {
         title: "用户旅程与设计机会",
@@ -518,8 +518,8 @@ const caseStudies: Record<string, CaseStudy> = {
           "材料选择覆盖 ABS 塑料、防腐木、尼龙网布与亚克力玻璃，兼顾轻量化、耐用性和蜜蜂生活习性。",
         ],
         images: [
-          { src: "/legacy-images/caotufengchao.jpg", alt: "BEE HIVE 产品草图" },
-          { src: "/legacy-images/baozhatufengchao.jpg", alt: "BEE HIVE CMF 与爆炸图" },
+          { src: "/legacy-images/caotufengchao.webp", alt: "BEE HIVE 产品草图" },
+          { src: "/legacy-images/baozhatufengchao.webp", alt: "BEE HIVE CMF 与爆炸图" },
         ],
       },
       {
@@ -532,8 +532,8 @@ const caseStudies: Record<string, CaseStudy> = {
         ],
         body: ["六边形单元可自由拼接成不同造型，让用户获得 DIY 参与感，同时成为城市建筑外立面中的自然景观。"],
         images: [
-          { src: "/legacy-images/beehive-city-effect.jpg", alt: "BEE HIVE 城市应用效果图" },
-          { src: "/legacy-images/fengchaochangjing.jpg", alt: "BEE HIVE 城市应用场景" },
+          { src: "/legacy-images/beehive-city-effect.webp", alt: "BEE HIVE 城市应用效果图" },
+          { src: "/legacy-images/fengchaochangjing.webp", alt: "BEE HIVE 城市应用场景" },
         ],
       },
     ],
@@ -543,7 +543,7 @@ const caseStudies: Record<string, CaseStudy> = {
     title: "ICPB · 创意共享充电宝",
     lead:
       "针对共享充电宝外形同质化、弹出后难以拿取和归还方向不清的问题，以“雪糕棍”手柄完成兼顾辨识度与人机体验的微创新。",
-    hero: { src: "/legacy-images/ICPB.jpg", alt: "ICPB 创意共享充电宝主效果图" },
+    hero: { src: "/legacy-images/ICPB.webp", alt: "ICPB 创意共享充电宝主效果图" },
     stats: [
       { label: "成果", value: "欧洲产品设计奖 Winner" },
       { label: "团队", value: "3 人" },
@@ -569,7 +569,7 @@ const caseStudies: Record<string, CaseStudy> = {
           "从概念到实物持续探索更符合人机工程学、同时具有趣味性的雪糕造型。",
           "最终仅在尾部增加“雪糕棍”手柄，并配合清新 CMF：手柄帮助用户判断归还方向，也让拿取和放回更省力；像拿雪糕一样的动作进一步强化趣味性和记忆点。",
         ],
-        images: [{ src: "/legacy-images/cdb-caotu.jpg", alt: "ICPB 草图构想" }],
+        images: [{ src: "/legacy-images/cdb-caotu.webp", alt: "ICPB 草图构想" }],
       },
       {
         title: "使用流程与最终呈现",
@@ -580,10 +580,10 @@ const caseStudies: Record<string, CaseStudy> = {
           { title: "04 · 归还设备", body: "手柄位置天然提示插入方向，降低操作判断成本。" },
         ],
         images: [
-          { src: "/legacy-images/cdb-tanchu.jpg", alt: "ICPB 扫码弹出充电宝" },
-          { src: "/legacy-images/cdb-naqu.jpg", alt: "ICPB 拿出充电宝" },
-          { src: "/legacy-images/cdb-chongdian.jpg", alt: "ICPB 给手机充电" },
-          { src: "/legacy-images/cdbchangjing.jpg", alt: "ICPB 最终方案渲染图" },
+          { src: "/legacy-images/cdb-tanchu.webp", alt: "ICPB 扫码弹出充电宝" },
+          { src: "/legacy-images/cdb-naqu.webp", alt: "ICPB 拿出充电宝" },
+          { src: "/legacy-images/cdb-chongdian.webp", alt: "ICPB 给手机充电" },
+          { src: "/legacy-images/cdbchangjing.webp", alt: "ICPB 最终方案渲染图" },
         ],
       },
     ],
@@ -599,7 +599,7 @@ function ProjectVisual({ project, compact = false }: { project: Project; compact
     return (
       <div className="project-image visual-mindanchor" role="img" aria-label="MindAnchor 任务节奏与专注陪伴界面示意">
         <span className="project-cover-kicker">ADHD · AI COMPANION</span>
-        <div className="project-cover-board"><img src="/legacy-images/mindanchor.jpg" alt="MindAnchor 任务时间线界面" loading="lazy" /></div>
+        <div className="project-cover-board"><img src="/legacy-images/mindanchor.webp" alt="MindAnchor 任务时间线界面" loading="lazy" /></div>
       </div>
     );
   }
@@ -608,7 +608,7 @@ function ProjectVisual({ project, compact = false }: { project: Project; compact
     return (
       <div className="project-image visual-cargoware" role="img" aria-label="CargoWare CRM 客户跟进界面示意">
         <span className="project-cover-kicker">SALES · FOLLOW-UP · CRM</span>
-        <div className="project-cover-board"><img src="/legacy-images/cargoware.jpg" alt="CargoWare CRM 销售跟进界面" loading="lazy" /></div>
+        <div className="project-cover-board"><img src="/legacy-images/cargoware.webp" alt="CargoWare CRM 销售跟进界面" loading="lazy" /></div>
       </div>
     );
   }
@@ -626,9 +626,9 @@ function ProjectVisual({ project, compact = false }: { project: Project; compact
       <div className="project-image visual-shishi" role="img" aria-label="柿柿专注首页、计划室与 AI 服务真实界面组合">
         <span className="shishi-card-kicker">FOCUS · PLAN · SPACE</span>
         <div className="shishi-card-screens" aria-hidden="true">
-          <figure className="shishi-card-screen shishi-card-screen-home"><img src="/shishi-ui/IMG_9718-card.jpg" alt="" loading="lazy" /></figure>
-          <figure className="shishi-card-screen shishi-card-screen-plan"><img src="/shishi-ui/IMG_9738-card.jpg" alt="" loading="lazy" /></figure>
-          <figure className="shishi-card-screen shishi-card-screen-ai"><img src="/shishi-ui/IMG_9725-card.jpg" alt="" loading="lazy" /></figure>
+          <figure className="shishi-card-screen shishi-card-screen-home"><img src="/shishi-ui/IMG_9718-card.webp" alt="" loading="lazy" /></figure>
+          <figure className="shishi-card-screen shishi-card-screen-plan"><img src="/shishi-ui/IMG_9738-card.webp" alt="" loading="lazy" /></figure>
+          <figure className="shishi-card-screen shishi-card-screen-ai"><img src="/shishi-ui/IMG_9725-card.webp" alt="" loading="lazy" /></figure>
         </div>
       </div>
     );
@@ -639,7 +639,7 @@ function ProjectVisual({ project, compact = false }: { project: Project; compact
       <div className="project-image visual-merchant" aria-label="柿柿专注数据与经营平台界面示意">
         <span className="merchant-card-note">DATA → AUDIENCE → ACTION</span>
         <div className="merchant-card-board">
-          <div className="merchant-card-shot"><img src="/merchant-ui/platform-overview-card.png" alt="柿柿专注平台数据总览" loading="lazy" /></div>
+          <div className="merchant-card-shot"><img src="/merchant-ui/platform-overview-card.webp" alt="柿柿专注平台数据总览" loading="lazy" /></div>
         </div>
       </div>
     );
@@ -776,7 +776,7 @@ function DraggablePortraitReveal() {
         onDoubleClick={resetPosition}
         aria-label="拖动手绘人物，查看下方真实照片"
       >
-        <img src="/handdrawn-assets/generated/shuweijia-thinking-relaxed.png" alt="舒惟佳的红色手绘单人线稿" draggable={false} />
+        <img src="/handdrawn-assets/generated/shuweijia-thinking-relaxed.webp" alt="舒惟佳的红色手绘单人线稿" draggable={false} />
         <span>拖动查看照片 · 双击复位 ↗</span>
       </button>
     </div>
@@ -894,9 +894,9 @@ function ShishiCaseCover() {
     <div className="shishi-cover-art" aria-label="柿柿专注小程序核心界面组合封面">
       <div className="shishi-cover-copy"><span>FOCUS · PLAN · SPACE</span><strong>把“想学”<br />带回今天。</strong><small>小程序 × AI × 线下自习室</small></div>
       <div className="shishi-cover-phones" aria-hidden="true">
-        <img src="/shishi-ui/IMG_9738.PNG" alt="" />
-        <img src="/shishi-ui/IMG_9718.PNG" alt="" />
-        <img src="/shishi-ui/IMG_9725.PNG" alt="" />
+        <img src="/shishi-ui/IMG_9738.webp" alt="" />
+        <img src="/shishi-ui/IMG_9718.webp" alt="" />
+        <img src="/shishi-ui/IMG_9725.webp" alt="" />
       </div>
       <i className="shishi-cover-sun" /><i className="shishi-cover-grid" />
     </div>
@@ -935,37 +935,37 @@ function ShishiCaseStudySections({ onOpenMerchant }: { onOpenMerchant: () => voi
         <ShishiSectionHeading number="03" eyebrow="CORE EXPERIENCE / 首页与专注" title="打开首页，就能回答“我现在该做什么”" />
         <div className="shishi-split-feature">
           <div className="shishi-copy-stack"><article><small>WHY / 为什么做</small><h4>学习的第一道阻力，往往是重新进入状态。</h4><p>如果首页只是功能入口集合，用户仍要自己判断从哪里开始。我们需要先呈现今天的状态，再给出最短行动路径。</p></article><article><small>WHAT / 做成什么</small><h4>把今日学习、快捷专注与累计反馈放在同一视线。</h4><p>首页聚合公共自习室、签到、番茄钟和学习数据；用户既可以快速开始一次专注，也能看到持续学习留下的结果。</p></article></div>
-          <div className="shishi-phone-scene home-scene"><ShishiPhone src="/shishi-ui/IMG_9718.PNG" alt="柿柿专注首页，展示公共自习室、番茄钟与学习数据" /></div>
+          <div className="shishi-phone-scene home-scene"><ShishiPhone src="/shishi-ui/IMG_9718.webp" alt="柿柿专注首页，展示公共自习室、番茄钟与学习数据" /></div>
         </div>
-        <div className="shishi-wide-story"><ShishiPhone src="/shishi-ui/IMG_9742.PNG" alt="柿柿专注线上自习室空间选择界面" /><ShishiPhone src="/shishi-ui/IMG_9743.PNG" alt="柿柿专注亮区公共自习室实时选座界面" /><div><small>ONLINE STUDY ROOM / 线上自习室</small><h4>专注不只是一个人的倒计时。</h4><p>用户可按明暗、交流氛围选择线上空间，再进入公共教室选座。空间状态、实时人数和座位占用让“有人一起学”变得可感知，同时保留安静区不发弹幕的边界。</p></div></div>
+        <div className="shishi-wide-story"><ShishiPhone src="/shishi-ui/IMG_9742.webp" alt="柿柿专注线上自习室空间选择界面" /><ShishiPhone src="/shishi-ui/IMG_9743.webp" alt="柿柿专注亮区公共自习室实时选座界面" /><div><small>ONLINE STUDY ROOM / 线上自习室</small><h4>专注不只是一个人的倒计时。</h4><p>用户可按明暗、交流氛围选择线上空间，再进入公共教室选座。空间状态、实时人数和座位占用让“有人一起学”变得可感知，同时保留安静区不发弹幕的边界。</p></div></div>
       </section>
 
       <section className="shishi-feature shishi-tarot-section">
         <ShishiSectionHeading number="04" eyebrow="AI SERVICE / AI 塔罗" title="不把 AI 塞进聊天框，而是设计一段完整服务" lead="这是我独立负责产品设计、开发联调与 AI 接入的核心模块。" />
         <div className="shishi-feature-rationale"><article><b>为什么需要</b><p>用户需要的不是一次随机答案，而是一段能够承接问题、建立期待、解释结果并继续追问的体验。</p></article><article><b>产品判断</b><p>用牌阵和抽牌建立明确流程，用上下文连续对话保留服务深度，再用积分、登录与异常规则控制真实使用边界。</p></article></div>
         <div className="shishi-tarot-flow">
-          {[["/shishi-ui/IMG_9719.PNG","01","提出问题","先帮助用户说清此刻真正关心的事。"],["/shishi-ui/IMG_9720.PNG","02","选择牌阵","单张快速指引或过去／现在／未来三张牌。"],["/shishi-ui/IMG_9725.PNG","03","结构化解读","结合正逆位与牌面关系输出可阅读的解释。"],["/shishi-ui/IMG_9728.PNG","04","继续追问","保留同一次抽牌上下文，让问题可以被继续展开。"]].map(([src,n,title,note]) => <article key={n}><ShishiPhone src={src} alt={`柿柿专注 AI 塔罗${title}界面`} /><div><b>{n}</b><h4>{title}</h4><p>{note}</p></div></article>)}
+          {[["/shishi-ui/IMG_9719.webp","01","提出问题","先帮助用户说清此刻真正关心的事。"],["/shishi-ui/IMG_9720.webp","02","选择牌阵","单张快速指引或过去／现在／未来三张牌。"],["/shishi-ui/IMG_9725.webp","03","结构化解读","结合正逆位与牌面关系输出可阅读的解释。"],["/shishi-ui/IMG_9728.webp","04","继续追问","保留同一次抽牌上下文，让问题可以被继续展开。"]].map(([src,n,title,note]) => <article key={n}><ShishiPhone src={src} alt={`柿柿专注 AI 塔罗${title}界面`} /><div><b>{n}</b><h4>{title}</h4><p>{note}</p></div></article>)}
         </div>
         <div className="shishi-rule-line"><span>78 张完整牌组</span><span>正／逆位</span><span>连续上下文</span><span>小柿饼扣减</span><span>服务端价格校验</span><span>异常兜底</span></div>
       </section>
 
       <section className="shishi-feature shishi-plan-section">
         <ShishiSectionHeading number="05" eyebrow="AI PLANNING / 计划室" title="计划不是生成完就结束，而要经得起每天的变化" lead="计划室正在作为第二版重点模块推进；以下界面展示的是已完成的产品与交互方案，不将其表述为首版上线结果。" />
-        <div className="shishi-plan-hero"><div><small>WHY / 为什么做</small><h4>长期目标太远，普通待办又看不到全局。</h4><p>用户需要一条介于“我要上岸”和“今天背 20 个词”之间的可调整路径；AI 可以计算，但不能替用户决定。</p><blockquote>长期阶段定方向，周计划由用户确认，今日任务才进入执行。</blockquote></div><ShishiPhone src="/shishi-ui/IMG_9738.PNG" alt="柿柿专注计划室总览界面" /></div>
-        <div className="shishi-plan-steps"><article><ShishiPhone src="/shishi-ui/IMG_9739.PNG" alt="AI 生成学习路线后的计划确认界面" /><div><b>01</b><h4>先确认路线</h4><p>结合目标日期、当前水平、资料与可用时间生成阶段计划；用户确认后再继续，不让 AI 直接覆盖现实安排。</p></div></article><article><ShishiPhone src="/shishi-ui/IMG_9740.PNG" alt="计划室每日任务清单界面" /><div><b>02</b><h4>再落到今天</h4><p>把阶段目标拆成按学科、用时和完成标准组织的今日任务，并提供“按计划来／今天有点赶”的节奏选择。</p></div></article><article><ShishiPhone src="/shishi-ui/IMG_9741.PNG" alt="真实学习完成数据与记录界面" /><div><b>03</b><h4>只记录真实发生</h4><p>日、周、月、年维度保留实际完成与真实专注时长，后续计划调整也不会覆盖已经发生的学习。</p></div></article></div>
+        <div className="shishi-plan-hero"><div><small>WHY / 为什么做</small><h4>长期目标太远，普通待办又看不到全局。</h4><p>用户需要一条介于“我要上岸”和“今天背 20 个词”之间的可调整路径；AI 可以计算，但不能替用户决定。</p><blockquote>长期阶段定方向，周计划由用户确认，今日任务才进入执行。</blockquote></div><ShishiPhone src="/shishi-ui/IMG_9738.webp" alt="柿柿专注计划室总览界面" /></div>
+        <div className="shishi-plan-steps"><article><ShishiPhone src="/shishi-ui/IMG_9739.webp" alt="AI 生成学习路线后的计划确认界面" /><div><b>01</b><h4>先确认路线</h4><p>结合目标日期、当前水平、资料与可用时间生成阶段计划；用户确认后再继续，不让 AI 直接覆盖现实安排。</p></div></article><article><ShishiPhone src="/shishi-ui/IMG_9740.webp" alt="计划室每日任务清单界面" /><div><b>02</b><h4>再落到今天</h4><p>把阶段目标拆成按学科、用时和完成标准组织的今日任务，并提供“按计划来／今天有点赶”的节奏选择。</p></div></article><article><ShishiPhone src="/shishi-ui/IMG_9741.webp" alt="真实学习完成数据与记录界面" /><div><b>03</b><h4>只记录真实发生</h4><p>日、周、月、年维度保留实际完成与真实专注时长，后续计划调整也不会覆盖已经发生的学习。</p></div></article></div>
         <div className="shishi-plan-flow">目标与资料 <i>→</i> AI 阶段计划 <i>→</i> 用户确认周计划 <i>→</i> 今日任务 <i>→</i> 专注记录 <i>→</i> 复盘调整</div>
       </section>
 
       <section className="shishi-feature shishi-space-section">
         <ShishiSectionHeading number="06" eyebrow="ONLINE × OFFLINE / 空间与权益" title="让线上学习留下的积累，能在线下继续发生" />
-        <div className="shishi-space-grid"><article><ShishiPhone src="/shishi-ui/IMG_9736.PNG" alt="柿柿专注线下学习空间列表界面" /><div><small>找到空间</small><h4>从城市到门店</h4><p>按省市筛选门店，查看地址、营业时间、距离与特色，再进入预约或导航。</p></div></article><article><ShishiPhone src="/shishi-ui/IMG_9733.PNG" alt="柿柿专注积分与会员权益中心界面" /><div><small>积累权益</small><h4>把学习行为变成可感知资产</h4><p>小柿饼、会员、排行榜和门店权益集中呈现，让专注后的反馈不止是一串分钟数。</p></div></article></div>
+        <div className="shishi-space-grid"><article><ShishiPhone src="/shishi-ui/IMG_9736.webp" alt="柿柿专注线下学习空间列表界面" /><div><small>找到空间</small><h4>从城市到门店</h4><p>按省市筛选门店，查看地址、营业时间、距离与特色，再进入预约或导航。</p></div></article><article><ShishiPhone src="/shishi-ui/IMG_9733.webp" alt="柿柿专注积分与会员权益中心界面" /><div><small>积累权益</small><h4>把学习行为变成可感知资产</h4><p>小柿饼、会员、排行榜和门店权益集中呈现，让专注后的反馈不止是一串分钟数。</p></div></article></div>
       </section>
 
       <section className="shishi-feature shishi-merchant-section">
         <ShishiSectionHeading number="07" eyebrow="B-SIDE EXTENSION / B 端延伸" title="为了让门店理解这些行为，我又做了一套独立的经营平台" />
         <div className="shishi-merchant-bridge">
           <div><small>INDEPENDENT CASE STUDY</small><h4>柿柿专注 · 数据与经营平台</h4><p>把小程序中的引流、专注、功能访问、积分、卡券与到店行为，转化成可下钻的经营数据、规则画像和人群圈选工具。</p><button onClick={onOpenMerchant}>查看独立 B 端项目 <span>→</span></button></div>
-          <div className="shishi-merchant-bridge-screen"><img src="/merchant-ui/platform-overview.png" alt="柿柿专注数据与经营平台总览" loading="lazy" /></div>
+          <div className="shishi-merchant-bridge-screen"><img src="/merchant-ui/platform-overview.webp" alt="柿柿专注数据与经营平台总览" loading="lazy" /></div>
         </div>
       </section>
 
@@ -1074,7 +1074,7 @@ function MerchantCaseCover() {
   return (
     <div className="merchant-case-cover-art" aria-label="柿柿专注数据与经营平台核心界面组合封面">
       <span className="merchant-cover-note">DATA → AUDIENCE → ACTION</span>
-      <MerchantBrowserShot src="/merchant-ui/platform-overview.png" alt="平台数据总览" className="merchant-cover-main" />
+      <MerchantBrowserShot src="/merchant-ui/platform-overview.webp" alt="平台数据总览" className="merchant-cover-main" />
       <div className="merchant-cover-card merchant-cover-kpi"><small>核心路径</small><strong>行为 → 人群</strong><span>已接入线上数据</span></div>
       <div className="merchant-cover-card merchant-cover-action"><small>活动方案</small><strong>动态</strong><span>实时匹配人数</span></div>
     </div>
@@ -1106,7 +1106,7 @@ function MerchantCaseStudySections() {
 
       <section className="merchant-overview-section">
         <MerchantSectionHeading number="03" eyebrow="PLATFORM VIEW / 平台总览" title="先看全局，再下钻到门店与用户" lead="平台需要同时判断今天发生了什么、增长是否健康，以及不同门店贡献了什么。" />
-        <MerchantBrowserShot src="/merchant-ui/platform-overview.png" alt="平台增长与经营总览，包含实时指标和趋势" className="merchant-overview-shot" />
+        <MerchantBrowserShot src="/merchant-ui/platform-overview.webp" alt="平台增长与经营总览，包含实时指标和趋势" className="merchant-overview-shot" />
         <p className="merchant-snapshot-note">界面数据为 2026.08.23 的实时快照，仅用于说明产品结构，不作为稳定业务成果。</p>
         <div className="merchant-overview-notes">
           <article><small>实时与今日</small><h4>判断当下是否正常</h4><p>在线、活跃、启动、新增等指标帮助平台快速发现当天变化。</p></article>
@@ -1128,7 +1128,7 @@ function MerchantCaseStudySections() {
       <section className="merchant-metric-section">
         <MerchantSectionHeading number="05" eyebrow="METRIC PROOF / 功能访问" title="在比较功能偏好之前，先把使用口径算对" />
         <div className="merchant-metric-proof">
-          <MerchantBrowserShot src="/merchant-ui/feature-analytics.png" alt="关联用户功能访问与周期分析" />
+          <MerchantBrowserShot src="/merchant-ui/feature-analytics.webp" alt="关联用户功能访问与周期分析" />
           <div><article><b>01</b><h4>7／30／90 天切换</h4><p>用同一套周期比较功能表现和前后变化。</p></article><article><b>02</b><h4>用户 × 功能 × 日期去重</h4><p>同一用户同一天反复进入只计算一次，避免 PV 虚高。</p></article><article><b>03</b><h4>人数、活跃人天与人均天次</h4><p>把覆盖广度和使用频率拆开理解；活跃人天不等于访问次数。</p></article></div>
         </div>
       </section>
@@ -1424,13 +1424,13 @@ export default function Home() {
       <div ref={rightRailRef} className="edge-rail right" aria-hidden="true" />
 
       <nav className="top-nav" aria-label="主导航">
-        <a className="nav-mark" href="#top" aria-label="返回首页"><span>惟</span><img className="nav-mark-doodle" src="/handdrawn-assets/generated/shuweijia-nav-wave-small.png" alt="" aria-hidden="true" /></a>
+        <a className="nav-mark" href="#top" aria-label="返回首页"><span>惟</span><img className="nav-mark-doodle" src="/handdrawn-assets/generated/shuweijia-nav-wave-small.webp" alt="" aria-hidden="true" /></a>
         <div>
-          <a href="#about"><span>关于</span><img className="nav-doodle" src="/handdrawn-assets/icon-bird.png" alt="" aria-hidden="true" /></a>
-          <a href="#experience"><span>实习</span><img className="nav-doodle" src="/handdrawn-assets/icon-run.png" alt="" aria-hidden="true" /></a>
-          <a href="#projects"><span>项目</span><img className="nav-doodle" src="/handdrawn-assets/icon-tools.png" alt="" aria-hidden="true" /></a>
-          <a href="#practice"><span>练习</span><img className="nav-doodle" src="/handdrawn-assets/icon-computer.png" alt="" aria-hidden="true" /></a>
-          <a href="#connect"><span>联系</span><img className="nav-doodle" src="/handdrawn-assets/icon-tarot.png" alt="" aria-hidden="true" /></a>
+          <a href="#about"><span>关于</span><img className="nav-doodle" src="/handdrawn-assets/icon-bird.webp" alt="" aria-hidden="true" /></a>
+          <a href="#experience"><span>实习</span><img className="nav-doodle" src="/handdrawn-assets/icon-run.webp" alt="" aria-hidden="true" /></a>
+          <a href="#projects"><span>项目</span><img className="nav-doodle" src="/handdrawn-assets/icon-tools.webp" alt="" aria-hidden="true" /></a>
+          <a href="#practice"><span>练习</span><img className="nav-doodle" src="/handdrawn-assets/icon-computer.webp" alt="" aria-hidden="true" /></a>
+          <a href="#connect"><span>联系</span><img className="nav-doodle" src="/handdrawn-assets/icon-tarot.webp" alt="" aria-hidden="true" /></a>
         </div>
       </nav>
 
@@ -1452,7 +1452,7 @@ export default function Home() {
                     <div className="hero-scene-wrap">
                       <img
                         className="hero-scene"
-                        src="/handdrawn-assets/generated/hero-shuweijia-relaxed.png"
+                        src="/handdrawn-assets/generated/hero-shuweijia-relaxed.webp"
                         alt="舒惟佳的手绘产品设计工作场景"
                       />
                     </div>
@@ -1570,7 +1570,7 @@ export default function Home() {
               <p>APP 产品经理实习生</p>
             </div>
             <time>2026.06—至今</time>
-            <img src="/handdrawn-assets/icon-run.png" alt="" aria-hidden="true" />
+            <img src="/handdrawn-assets/icon-run.webp" alt="" aria-hidden="true" />
           </header>
 
           <p className="experience-summary">

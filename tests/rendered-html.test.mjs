@@ -44,8 +44,8 @@ test("includes the migrated legacy case studies", async () => {
   assert.match(source, /用户旅程与设计机会/);
   assert.match(source, /ICPB · 创意共享充电宝/);
   assert.match(source, /草图构想与最终方案/);
-  assert.match(source, /dragonfly-exploded\.png/);
-  assert.match(source, /beehive-ideation\.png/);
+  assert.match(source, /dragonfly-exploded\.webp/);
+  assert.match(source, /beehive-ideation\.webp/);
 });
 
 test("keeps the Shishi and merchant case-study visuals compact and source-backed", async () => {
@@ -56,11 +56,11 @@ test("keeps the Shishi and merchant case-study visuals compact and source-backed
     source.indexOf('if (project.visual === "shishi")'),
     source.indexOf('if (project.visual === "merchant")'),
   );
-  assert.match(shishiCard, /IMG_9718-card\.jpg/);
-  assert.match(shishiCard, /IMG_9738-card\.jpg/);
-  assert.match(shishiCard, /IMG_9725-card\.jpg/);
+  assert.match(shishiCard, /IMG_9718-card\.webp/);
+  assert.match(shishiCard, /IMG_9738-card\.webp/);
+  assert.match(shishiCard, /IMG_9725-card\.webp/);
   assert.doesNotMatch(shishiCard, /phone-shell|完成作品集首页/);
-  assert.match(source, /IMG_9742\.PNG" alt="柿柿专注线上自习室空间选择界面"/);
+  assert.match(source, /IMG_9742\.webp" alt="柿柿专注线上自习室空间选择界面"/);
 
   const merchantDashboard = source.slice(
     source.indexOf("function MerchantDashboardPreview"),
@@ -68,7 +68,7 @@ test("keeps the Shishi and merchant case-study visuals compact and source-backed
   );
   assert.match(merchantDashboard, /门店经营看板/);
   assert.match(merchantDashboard, /结构示意 · 非真实数值/);
-  assert.doesNotMatch(merchantDashboard, /platform-overview\.png/);
+  assert.doesNotMatch(merchantDashboard, /platform-overview\.webp/);
   assert.match(source, /merchant-campaign-workspace/);
 
   assert.match(styles, /\.shishi-case-sections \{ --green:var\(--red-dark\);--green-dark:var\(--ink\)/);
