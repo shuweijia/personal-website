@@ -1278,6 +1278,7 @@ export default function Home() {
   const heroRef = useRef<HTMLElement>(null);
   const modalRef = useRef<HTMLElement>(null);
   const modalCloseRef = useRef<HTMLButtonElement>(null);
+  const jobDeckClickTimesRef = useRef<number[]>([]);
 
   const filtered = useMemo(
     () => (filter === "全部" ? projects : projects.filter((project) => project.category === filter)),
@@ -1384,6 +1385,14 @@ export default function Home() {
     if (!activeProject) return;
     const currentIndex = portfolioItems.findIndex((project) => project.id === activeProject.id);
     setActiveProject(portfolioItems[(currentIndex + 1) % portfolioItems.length]);
+  };
+  const openJobDeckAfterSecretClick = () => {
+    const now = Date.now();
+    jobDeckClickTimesRef.current = [...jobDeckClickTimesRef.current, now].filter((time) => now - time <= 1500);
+    if (jobDeckClickTimesRef.current.length < 5) return;
+
+    jobDeckClickTimesRef.current = [];
+    window.open("https://www.shucan.xyz/recruiting", "_blank", "noopener,noreferrer");
   };
 
   return (
@@ -1664,7 +1673,14 @@ export default function Home() {
             <p>产品经理 / AI 开发</p>
             <a href="mailto:swj011021@163.com">swj011021@163.com</a>
             <a href="tel:+8613212785002">+86 132 1278 5002</a>
-            <div className="qr-faux" aria-hidden="true">惟</div>
+            <button
+              className="qr-faux hidden-job-deck-link"
+              type="button"
+              onClick={openJobDeckAfterSecretClick}
+              aria-label="个人印章"
+            >
+              惟
+            </button>
           </div>
         </div>
         <footer>
